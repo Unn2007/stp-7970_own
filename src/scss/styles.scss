@@ -7,20 +7,37 @@
 @import './riseAbove.scss';
 @import './userReviews.scss';
 
-// @import './vite-promo.scss';
+
 
 :root {
   font-family: 'Readex Pro', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
-
-  color: #4f4333;
-  background-color: rgb(185, 221, 249);
-
+  color: $_brown;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: $_backg;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
