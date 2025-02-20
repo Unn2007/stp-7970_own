@@ -70,7 +70,7 @@
   width: 294px;
   height: 205px;
   margin-bottom: 24px;
-  transform: rotate(11deg);
+  // transform: rotate(11deg);
 }
 
 .footer-nav-list {
@@ -167,6 +167,7 @@
     width: 413px;
     height: 288px;
     order: 1;
+    transform: rotate(-11deg);
   }
   .footer-play {
     order: 2;
