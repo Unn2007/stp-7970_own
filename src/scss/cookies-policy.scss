@@ -1,0 +1,38 @@
+body {
+  background-color: $_backg;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-href {
+  border-radius: 8px;
+  padding: 16px;
+  width: 76px;
+  height: 54px;
+  background: #eeefd4;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.section-href {
+  border-radius: 8px;
+  padding: 16px;
+  width: 76px;
+  height: 54px;
+  background: #eeefd4;
+}
