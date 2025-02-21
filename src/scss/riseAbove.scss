@@ -1,3 +1,15 @@
+.hero {
+  background-image: url(/img/cloud1x.png);
+
+  background-repeat: no-repeat;
+  background-position: top -60px left 1px;
+  // @media (min-width: 1200px) {
+  //   background-image: url(/img/about/Shell-1x-left-desktop.png),
+  //     url(/img/about/Shell-1x-right-desktop.png);
+  //   background-position: top -90px left 180px, top -90px right 180px;
+  // }
+}
+
 .hero-header {
   font-family: 'Readex Pro';
   font-weight: 600;
@@ -48,3 +60,30 @@
 
 .google-img {
 }
+
+
+// .about-container {
+//   background-image: url(/img/about/Shell-1x-left-min.png),
+//     url(/img/about/Shell-1x-right-min.png);
+//   background-repeat: no-repeat;
+//   background-position: top -60px left 1px, top -60px right 1px;
+//   @media (min-width: 1200px) {
+//     background-image: url(/img/about/Shell-1x-left-desktop.png),
+//       url(/img/about/Shell-1x-right-desktop.png);
+//     background-position: top -90px left 180px, top -90px right 180px;
+//   }
+// }
+// @media screen and (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 2dppx),
+//   (min-resolution: 192dpi) {
+//   .about-container {
+//     background-image: url(/img/about/Shell-2x-left-min.png),
+//       url(/img/about/Shell-2x-right-min.png);
+//     background-size: 90px;
+//     @media (min-width: 1200px) {
+//       background-image: url(/img/about/Shell-2x-left-desktop.png),
+//         url(/img/about/Shell-2x-right-desktop.png);
+//       background-size: 170px;
+//     }
+//   }
+// }
