@@ -1,3 +1,4 @@
+@import './modal.scss';
 @import './header.scss';
 @import './advantages.scss';
 @import './footer.scss';
@@ -25,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 60px;
 }
 
 .container {
@@ -36,9 +38,13 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  body {
+    padding-top: 102px;
+  }
   .container {
     max-width: 1200px;
     padding-left: 60px;
     padding-right: 60px;
   }
 }
+
