@@ -1,4 +1,8 @@
 .header {
+  position: fixed;
+  top: 16px;
+  left:0;
+  width: 100%;
 }
 .header-wrapper {
   position: relative;
@@ -9,7 +13,7 @@
   border-radius: 16px;
 }
 .back-button {
-  display: none;
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -18,10 +22,19 @@
   border: 1px solid $_brown;
   border-radius: 16px;
 }
+
+.back-button.is-hidden {
+  display: none;
+}
 .nav {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 100;
+  
+ 
+}
+.nav.is-hidden {
   display: none;
 }
 .nav-list {
@@ -56,6 +69,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .hesder {
+    top: 20px;
+  }
   .header-wrapper {
     align-items: center;
     padding-right: 16px;
@@ -71,8 +87,12 @@
     display: block;
   }
 
-  .nav {
+  .nav.is-hidden {
     display: block;
+  }
+
+  .nav {
+    
     position: static;
   }
   .nav-list {
