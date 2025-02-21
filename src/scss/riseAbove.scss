@@ -1,1 +1,50 @@
+.hero-header {
+  font-family: 'Readex Pro';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fb2600 0%, #ff7e56 100%);
+  background-clip: text;
+  color: #fb2600;
+  -webkit-background-clip: text;
 
+  filter: url(#stroke);
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 0px #ffefa1, -2px -2px 0px #ffefa1, -2px 2px 0px #ffefa1,
+    2px -2px 0px #ffefa1;
+}
+
+.hero-images {
+  position: relative;
+  margin-bottom: 44px;
+}
+.hero-logo-img {
+  position: absolute;
+  right: 0;
+  bottom: -31px;
+}
+
+.hero-link {
+  max-width: 288px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  padding: 11px 0px;
+  background: $_white;
+  border: 2px solid $_brown;
+  border-radius: 12px;
+
+  font-size: 16px;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+
+  color: $_black;
+}
+
+.google-img {
+}
