@@ -1,0 +1,211 @@
+.our {
+}
+.container {
+}
+.our-wrapper {
+}
+
+.our-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(180deg, #fb2600 0%, #ff7e56 100%);
+  background-clip: text;
+  color: #fb2600;
+  -webkit-background-clip: text;
+  filter: url(#stroke);
+  //   margin-bottom: 16px;
+  text-shadow: 2px 2px 0px #ffefa1, -2px -2px 0px #ffefa1, -2px 2px 0px #ffefa1,
+    2px -2px 0px #ffefa1;
+  margin-bottom: 60px;
+}
+
+.our-box-wrapper-top {
+  border: 8px solid #f7d0c2;
+  border-radius: 16px;
+  padding: 8px 16px;
+  width: 288px;
+  //   height: 525px;
+  box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.25);
+  background: #fdf6de;
+  //   margin-top: -50px;
+  position: relative;
+  padding-left: 0;
+  padding-bottom: 220px;
+}
+
+// .our-cloud-top-top {
+//   width: 111px;
+//   height: 86px;
+//   transform: rotate(180deg);
+// }
+
+.our-description-top {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4f4333;
+  text-shadow: 2px 2px 0px #f2c2fb, -2px -2px 0px #f2c2fb, -2px 2px 0px #f2c2fb,
+    2px -2px 0px #f2c2fb;
+  width: 272px;
+}
+
+.our-description-top-span {
+  color: #a243b1;
+}
+.our-browse-top {
+  width: 252px;
+  height: 512px;
+  position: absolute;
+  bottom: -300px;
+  margin-left: 10px;
+}
+.our-cloud-top-bottom {
+}
+
+.our-text-lightning-wrapper {
+  display: none;
+}
+
+.our-text-lightning {
+}
+.our-box-wrapper-bottom {
+  border: 8px solid #f7d0c2;
+  border-radius: 16px;
+  padding: 8px 16px;
+  width: 288px;
+  //   height: 525px;
+  box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.25);
+  background: #fdf6de;
+  margin-top: 328px;
+  margin-bottom: 362px;
+  position: relative;
+  padding-left: 0;
+  padding-bottom: 220px;
+}
+
+.our-description-bottom {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4f4333;
+  text-shadow: 2px 2px 0px #f2c2fb, -2px -2px 0px #f2c2fb, -2px 2px 0px #f2c2fb,
+    2px -2px 0px #f2c2fb;
+  width: 272px;
+}
+
+.our-browse-bottom {
+  width: 252px;
+  height: 512px;
+  position: absolute;
+  bottom: -300px;
+  margin-left: 10px;
+}
+.our-cloud-bottom-bottom {
+}
+
+@media screen and (min-width: 1200px) {
+  .our-title {
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 151px;
+  }
+
+  .our-box-wrapper-top {
+    border: 8px solid #f7d0c2;
+    border-radius: 16px;
+    padding: 66px 975px 65px 91px;
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.25);
+    background: #fdf6de;
+    position: relative;
+  }
+
+  .our-description-top {
+    font-size: 16px;
+    text-align: left;
+    width: 437px;
+  }
+
+  .our-browse-top {
+    width: 348px;
+    height: 704px;
+    position: absolute;
+    top: -188px;
+    left: 640px;
+  }
+
+  .our-text-lightning-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // gap: 20px;
+
+    border: 2px solid #4f4333;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    max-width: 583px;
+    background: #fdf6de;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #a243b1;
+    text-shadow: 2px 2px 0px #f2c2fb, -2px -2px 0px #f2c2fb,
+      -2px 2px 0px #f2c2fb, 2px -2px 0px #f2c2fb;
+    text-transform: uppercase;
+
+    margin: 0 auto;
+    margin-top: 205px;
+  }
+
+  .our-text-lightning::before,
+  .our-text-lightning::after {
+    content: '';
+    display: inline-block;
+    align-items: center;
+    width: 30px;
+    height: 29px;
+    background: url('../img/lightning.png') no-repeat center / contain;
+  }
+
+  .our-box-wrapper-bottom {
+    border: 8px solid #f7d0c2;
+    border-radius: 16px;
+    padding: 66px 91px 65px 975px;
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.25);
+    background: #fdf6de;
+    position: relative;
+    margin-top: 232px;
+  }
+
+  .our-description-bottom {
+    font-size: 16px;
+    text-align: left;
+    width: 437px;
+
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #4f4333;
+    text-shadow: 2px 2px 0px #f2c2fb, -2px -2px 0px #f2c2fb,
+      -2px 2px 0px #f2c2fb, 2px -2px 0px #f2c2fb;
+
+    margin-left: -454px;
+  }
+
+  .our-browse-bottom {
+    width: 348px;
+    height: 704px;
+    position: absolute;
+    top: -188px;
+    right: 640px;
+  }
+}
