@@ -4,21 +4,23 @@
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
     backdrop:document.querySelector('[data-backdrop]'),
-    // links: document.querySelectorAll('.nav-link'),
+    links: document.querySelectorAll('.modal-nav-link'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
   
 
-  // refs.links.forEach(link => {
-  //   if (link) {
-  //     link.addEventListener('click', closeModal);
-  //   }
-  // });
+  refs.links.forEach(link => {
+    if (link) {
+      link.addEventListener('click', closeModal);
+    }
+  });
 
   function closeModal() {
     refs.modal.classList.add('is-hidden');
+    refs.closeModalBtn.classList.add('is-hidden');
+    refs.backdrop.classList.add('is-hidden');
   }
 
   function toggleModal() {
