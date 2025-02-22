@@ -4,6 +4,7 @@
 }
 
 .user-wrapper {
+  margin-bottom: 60px;
 }
 
 .user-title {
@@ -31,12 +32,11 @@
 .slider {
   display: flex;
   transition: transform 0.3s ease;
-  gap: 20px; /* Додаємо відстань між слайдами */
+  gap: 20px;
 }
 
 .user-slide {
   width: 288px;
-  height: 287px;
   border: 8px solid #f7d0c2;
   border-radius: 16px;
   box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.25);
@@ -44,12 +44,6 @@
   box-sizing: border-box !important;
   max-width: 100%;
 }
-
-// .user-mySwiper,
-// .user-mySwiper-slide {
-//   box-sizing: border-box !important;
-//   max-width: 100%;
-// }
 
 .user-mySwiper-slide-wrapper {
 }
@@ -87,9 +81,6 @@
   line-height: 1.2;
   color: #4f4333;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  color: #4f4333;
   padding-left: 8px;
 }
 
@@ -100,11 +91,14 @@
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   z-index: 10;
   position: relative;
   bottom: 0;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -115,6 +109,16 @@ button {
   height: 60px;
   border-radius: 24px;
   background-color: #a243b1;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button:hover {
@@ -123,14 +127,40 @@ button:hover {
 
 @media screen and (min-width: 1200px) {
   .user-title {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 80px;
     text-align: left;
   }
+
   .slider {
     display: flex;
-    overflow: hidden; /* Забираємо горизонтальний скрол */
+    transition: transform 0.3s ease;
+    gap: 16px;
   }
+
+  .user-slide {
+    width: 349px;
+
+    border: 8px solid #f7d0c2;
+    border-radius: 16px;
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.25);
+    background: #fdf6de;
+    box-sizing: border-box;
+  }
+
+  .user-mySwiper-slide-wrapper {
+    width: 349px;
+  }
+
+  .user-mySwiper-slide-text {
+    font-size: 16px;
+    padding-left: 16px;
+  }
+
+  .user-mySwiper-slide-name {
+    padding-left: 16px;
+  }
+
   .slider-buttons {
     display: flex;
   }

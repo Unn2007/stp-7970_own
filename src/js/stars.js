@@ -7,15 +7,29 @@ const nextButton = document.querySelector('.next');
 function updateSlider() {
   if (!slider) return;
 
-  const offset = -currentSlide * 100;
+  const slideWidth = slides[0].offsetWidth;
+  const totalSlides = slides.length;
+
+  const isMobile = window.innerWidth <= 1199;
+
+  let offset;
+  if (isMobile) {
+    offset = -currentSlide * 100;
+  } else {
+    offset = -currentSlide * (100 / 3);
+  }
+
   slider.style.transform = `translateX(${offset}%)`;
 }
 
-// листаємо
 function changeSlide(direction) {
-  currentSlide = (currentSlide + direction + slides.length) % slides.length;
+  const totalSlides = slides.length;
+
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
   updateSlider();
 }
 
 prevButton.addEventListener('click', () => changeSlide(-1));
 nextButton.addEventListener('click', () => changeSlide(1));
+
+window.addEventListener('resize', updateSlider);
