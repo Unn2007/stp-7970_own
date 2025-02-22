@@ -43,6 +43,9 @@
   background: #fdf6de;
   box-sizing: border-box !important;
   max-width: 100%;
+  padding-left: 8px;
+  padding-top: 24px;
+  padding-bottom: 17px;
 }
 
 .user-mySwiper-slide-wrapper {
@@ -50,9 +53,8 @@
 
 .user-rating {
   display: flex;
-  padding-top: 24px;
   padding-bottom: 16px;
-  padding-left: 16px;
+  padding-left: 8px;
 }
 
 .user-star-filled {
@@ -65,6 +67,13 @@
   height: 20px;
 }
 
+.user-wrapper-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 194px;
+}
+
 .user-mySwiper-slide-text {
   font-weight: 600;
   font-size: 14px;
@@ -72,7 +81,6 @@
   text-transform: uppercase;
   color: #4f4333;
   width: 256px;
-  padding-left: 8px;
 }
 
 .user-mySwiper-slide-name {
@@ -80,8 +88,6 @@
   font-size: 16px;
   line-height: 1.2;
   color: #4f4333;
-  font-weight: 500;
-  padding-left: 8px;
 }
 
 .slider-buttons {
@@ -140,12 +146,7 @@ button:hover {
 
   .user-slide {
     width: 349px;
-
-    border: 8px solid #f7d0c2;
-    border-radius: 16px;
-    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.25);
-    background: #fdf6de;
-    box-sizing: border-box;
+    padding-left: 16px;
   }
 
   .user-mySwiper-slide-wrapper {
@@ -154,11 +155,10 @@ button:hover {
 
   .user-mySwiper-slide-text {
     font-size: 16px;
-    padding-left: 16px;
+    width: 301px;
   }
 
   .user-mySwiper-slide-name {
-    padding-left: 16px;
   }
 
   .slider-buttons {
