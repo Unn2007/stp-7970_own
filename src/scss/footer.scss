@@ -4,6 +4,9 @@
 }
 
 .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav-logo-father {
@@ -74,11 +77,12 @@
 }
 
 .footer-nav-list {
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 32px;
-  padding-left: 8px;
+  padding-left: 38px;
 }
 .footer-nav-item {
 }
@@ -121,9 +125,12 @@
   }
 
   .footer-wrapper {
+    position: relative;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: initial;
   }
   .logo-nav {
   }
@@ -147,7 +154,7 @@
   .footer-nav-list {
     position: absolute;
     padding-left: 0;
-    bottom: 10%;
+    top: 119px;
   }
   .footer-nav-item {
   }
