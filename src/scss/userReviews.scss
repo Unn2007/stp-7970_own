@@ -1,0 +1,140 @@
+.user {
+}
+.container {
+}
+
+.user-wrapper {
+}
+
+.user-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(180deg, #fb2600 0%, #ff7e56 100%);
+  background-clip: text;
+  color: #fb2600;
+  -webkit-background-clip: text;
+  filter: url(#stroke);
+  text-shadow: 2px 2px 0px #ffefa1, -2px -2px 0px #ffefa1, -2px 2px 0px #ffefa1,
+    2px -2px 0px #ffefa1;
+  margin-bottom: 60px;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease;
+  gap: 20px; /* Додаємо відстань між слайдами */
+}
+
+.user-slide {
+  width: 288px;
+  height: 287px;
+  border: 8px solid #f7d0c2;
+  border-radius: 16px;
+  box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.25);
+  background: #fdf6de;
+  box-sizing: border-box !important;
+  max-width: 100%;
+}
+
+// .user-mySwiper,
+// .user-mySwiper-slide {
+//   box-sizing: border-box !important;
+//   max-width: 100%;
+// }
+
+.user-mySwiper-slide-wrapper {
+}
+
+.user-rating {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+
+.user-star-filled {
+  width: 20px;
+  height: 20px;
+}
+
+.user-mySwiper-slide-img {
+  width: 116px;
+  height: 20px;
+}
+
+.user-mySwiper-slide-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #4f4333;
+  width: 256px;
+  padding-left: 8px;
+}
+
+.user-mySwiper-slide-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #4f4333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #4f4333;
+  padding-left: 8px;
+}
+
+.slider-buttons {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10;
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 24px;
+  background-color: #a243b1;
+}
+
+button:hover {
+  background-color: #f2c2fb;
+}
+
+@media screen and (min-width: 1200px) {
+  .user-title {
+    font-size: 24px;
+    margin-bottom: 80px;
+    text-align: left;
+  }
+  .slider {
+    display: flex;
+    overflow: hidden; /* Забираємо горизонтальний скрол */
+  }
+  .slider-buttons {
+    display: flex;
+  }
+  .user-wrapper {
+    margin-bottom: 150px;
+  }
+}
