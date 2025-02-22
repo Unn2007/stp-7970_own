@@ -1,1 +1,123 @@
+.hero {
+  padding-top: 40px;
+}
+.hero-cloud-container {
+  position: relative;
+  overflow: visible;
+}
+.hero-cloud-container::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -87px;
+  width: 264px;
+  height: 159px;
+  background-image: url('/img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 
+.hero-header {
+  font-family: 'Readex Pro';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fb2600 0%, #ff7e56 100%);
+  background-clip: text;
+  color: #fb2600;
+  -webkit-background-clip: text;
+
+  filter: url(#stroke);
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 0px #ffefa1, -2px -2px 0px #ffefa1, -2px 2px 0px #ffefa1,
+    2px -2px 0px #ffefa1;
+}
+.hero-text {
+  display: none;
+}
+
+.hero-images {
+  position: relative;
+  margin-bottom: 44px;
+}
+.hero-logo-img {
+  position: absolute;
+  right: 0;
+  bottom: -31px;
+}
+
+.hero-link {
+  max-width: 288px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  padding: 11px 0px;
+  background: $_white;
+  border: 2px solid $_brown;
+  border-radius: 12px;
+
+  font-size: 16px;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+
+  color: $_black;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .hero-cloud-container {
+    max-width: 750px;
+  }
+  .hero {
+    padding-top: 138px;
+    padding-right: 450px;
+    padding-bottom: 244px;
+  }
+  .hero-header {
+    margin-bottom: 32px;
+    font-size: 49px;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .hero-text {
+    display: block;
+    margin-bottom: 32px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .hero-images {
+    position: absolute;
+    top: -114px;
+    right: -439px;
+    margin-bottom: 0px;
+  }
+  .hero-img {
+    width: 652px;
+    height: 472px;
+  }
+  .hero-logo-img {
+    width: 136px;
+    height: 136px;
+    right: 17px;
+    bottom: -6px;
+  }
+  .hero-link {
+    margin-right: auto;
+    margin-left: 0;
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+  .hero-cloud-container::before {
+    top: -256px;
+    left: -247px;
+    width: 429px;
+    height: 290px;
+  }
+}
