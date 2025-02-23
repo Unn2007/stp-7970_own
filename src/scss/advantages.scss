@@ -1,21 +1,24 @@
 .advantages {
-  position: relative;
+  // position: relative;
 }
 
 .container {
+}
+.advantages-container {
+  position: relative;
 }
 
 .advantages-container::after {
   content: '';
   position: absolute;
-  // top: 540px;
-  // left: -80px;
-  top: 26%;
-  left: -20%;
-  width: 130vw;
-  height: 80vw;
-  // width: 628;
-  // height: 339;
+  top: 441px;
+  left: -22px;
+  // top: 26%;
+  // left: -20%;
+  // width: 130vw;
+  // height: 80vw;
+  width: 370px;
+  height: 231px;
   background-image: url('../img/cloud1x.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -26,10 +29,10 @@
 .advantages-container-two::before {
   content: '';
   position: absolute;
-  top: 61%;
-  left: -10%;
-  width: 130vw;
-  height: 80vw;
+  top: 1000px;
+  left: 10px;
+  width: 370px;
+  height: 231px;
   // top: 1110px;
   // left: -60px;
   // width: 450px;
@@ -224,43 +227,31 @@
   // }
 
   .advantages-container::after {
-    content: '';
-    position: absolute;
-    // transform: translateX(1%) translateY(1%);
-    // top: 150px;
-    // left: 886px;
-    // width: 650px;
-    // height: 450px;
-    top: -32%;
-    left: 58%;
-    width: 45vw;
-    height: 80vw;
-    // width: 628;
-    // height: 339;
-    background-image: url('../img/cloud1x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
+   
+  top: 47px;
+  left: 658px;
+  
+  width: 675px;
+  height: 336px;
+  
   }
 
   .advantages-container-two::before {
-    content: '';
-    position: absolute;
-    // top: 980px;
-    // left: -56px;
-    // width: 700px;
-    // height: 400px;
-    top: 44%;
-    left: -3%;
-    width: 43vw;
-    height: 65vw;
-    background-image: url('../img/cloud1x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: rotate(180deg);
-    z-index: -1;
+    
+    top: 816px;
+    left: -123px;
+    width: 658px;
+    height: 339px;
+    // top: 44%;
+    // left: -3%;
+    // width: 43vw;
+    // height: 65vw;
+    // background-image: url('../img/cloud1x.png');
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // transform: rotate(180deg);
+    // z-index: -1;
   }
 
   .advantages-cloud-one-text {
