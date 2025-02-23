@@ -1,6 +1,47 @@
 .advantages {
+  position: relative;
 }
+
 .container {
+}
+
+.advantages-container::after {
+  content: '';
+  position: absolute;
+  // top: 540px;
+  // left: -80px;
+  top: 26%;
+  left: -20%;
+  width: 130vw;
+  height: 80vw;
+  // width: 628;
+  // height: 339;
+  background-image: url('../img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.advantages-container-two::before {
+  content: '';
+  position: absolute;
+  top: 61%;
+  left: -10%;
+  width: 130vw;
+  height: 80vw;
+  // top: 1110px;
+  // left: -60px;
+  // width: 450px;
+  // height: 250px;
+  // width: 628;
+  // height: 339;
+  background-image: url('../img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+  z-index: -1;
 }
 
 .advantages-wrapper {
@@ -41,7 +82,6 @@
   background: #fdf6de;
   box-sizing: border-box;
   max-width: 100%;
-  //   padding-left: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
 
@@ -74,12 +114,27 @@
 
 .advantages-part-wrapper-cloud-one {
   position: relative;
+  height: 231px;
 }
 
-.advantages-cloud-one {
-  width: 378;
-  height: 231;
-}
+// .advantages-part-wrapper-cloud-one::before {
+//   content: '';
+//   position: absolute;
+//   top: 20px;
+//   left: -60px;
+//   width: 378px;
+//   height: 231px;
+//   background-image: url('../img/cloud1x.png');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   z-index: -1;
+// }
+
+// .advantages-cloud-one {
+//   width: 378;
+//   height: 231;
+// }
 
 .advantages-cloud-one-text {
   position: absolute;
@@ -91,13 +146,29 @@
 
 .advantages-part-wrapper-cloud-two {
   position: relative;
+  height: 231px;
 }
 
-.advantages-cloud-two {
-  width: 366;
-  height: 224;
-  transform: rotate(180deg);
-}
+// .advantages-part-wrapper-cloud-two::before {
+//   content: '';
+//   position: absolute;
+//   top: 30px;
+//   left: -40px;
+//   width: 378px;
+//   height: 231px;
+//   background-image: url('../img/cloud1x.png');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   transform: rotate(180deg);
+//   z-index: -1;
+// }
+
+// .advantages-cloud-two {
+//   width: 366;
+//   height: 224;
+//   transform: rotate(180deg);
+// }
 
 .advantages-cloud-two-text {
   position: absolute;
@@ -126,10 +197,7 @@
   }
 
   .advantages-part-wrapper-storm {
-    // left: 50%;
     transform: translateX(-5%) translateY(6%);
-    // transform: translateY(6%);
-    // bottom: 48px;
   }
 
   .advantages-part-wrapper {
@@ -150,9 +218,49 @@
     text-transform: uppercase;
   }
 
-  .advantages-cloud-one {
-    width: 723;
-    height: 442;
+  // .advantages-cloud-one {
+  //   width: 723;
+  //   height: 442;
+  // }
+
+  .advantages-container::after {
+    content: '';
+    position: absolute;
+    // transform: translateX(1%) translateY(1%);
+    // top: 150px;
+    // left: 886px;
+    // width: 650px;
+    // height: 450px;
+    top: -32%;
+    left: 58%;
+    width: 45vw;
+    height: 80vw;
+    // width: 628;
+    // height: 339;
+    background-image: url('../img/cloud1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .advantages-container-two::before {
+    content: '';
+    position: absolute;
+    // top: 980px;
+    // left: -56px;
+    // width: 700px;
+    // height: 400px;
+    top: 44%;
+    left: -3%;
+    width: 43vw;
+    height: 65vw;
+    background-image: url('../img/cloud1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    z-index: -1;
   }
 
   .advantages-cloud-one-text {
@@ -165,11 +273,11 @@
     gap: 24px;
   }
 
-  .advantages-cloud-two {
-    width: 628;
-    height: 339;
-    transform: rotate(180deg);
-  }
+  // .advantages-cloud-two {
+  //   width: 628;
+  //   height: 339;
+  //   transform: rotate(180deg);
+  // }
 
   .advantages-cloud-two-text {
     left: 50%;
@@ -179,12 +287,14 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    left: 110px;
   }
 
   .storm-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 32px;
   }
