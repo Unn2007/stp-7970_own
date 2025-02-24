@@ -9,6 +9,7 @@
   }
   .advantages-container {
     position: relative;
+    
   }
   
   .advantages-container::after {
@@ -51,6 +52,10 @@
   }
   
   .advantages-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 52px;
   }
   
@@ -192,6 +197,7 @@
     .advantages-title {
       font-size: 32px;
       margin-bottom: 80px;
+      align-self: flex-start;
     }
   
     .advantages-cloud {
