@@ -18,8 +18,20 @@
     />
 
     <link rel="stylesheet" href="./scss/styles.scss" />
+
+    <link rel="stylesheet" href="./scss/accept-cookies.scss" />
   </head>
   <body>
+    <div id="cookieModal" class="cookie-modal"></div>
+
+    <script>
+      fetch('accept-cookies.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('cookieModal').innerHTML = data;
+        });
+    </script>
+
     <load ="partials/header.html" />
     <load ="partials/modal.html" />
 
@@ -45,6 +57,8 @@
 
     <!-- Loads the specified .html file -->
     <load ="partials/vite-promo.html" />
+
+    <script src="./js/acceptCookModal.js"></script>
 
     <script type="module" src="./main.js"></script>
   </body>
