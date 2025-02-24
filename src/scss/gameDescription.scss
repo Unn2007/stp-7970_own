@@ -1,0 +1,229 @@
+.descr-header {
+  margin-bottom: 32px;
+}
+.descr-clouds {
+  position: relative;
+  padding-top: 52px;
+}
+.descr-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+}
+.descr-card-item {
+  max-width: 288px;
+  padding: 8px 8px 10px 8px;
+  border-radius: 16px;
+  border: 2px solid $_brown;
+  background-color: $_200;
+}
+
+.descr-card-image {
+  width: 272px;
+  height: 258px;
+}
+
+.descr-card-text-wrap {
+  padding: 8px 18.5px;
+  background-color: $_white;
+}
+
+.descr-card-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: $_blue;
+  text-shadow: -1px -1px 0 #f2c2fb, 1px -1px 0 #f2c2fb, -1px 1px 0 #f2c2fb,
+    1px 1px 0 #f2c2fb, 1px 2px 2px #d9d9d2;
+}
+
+.pink_color {
+  color: $_purple_200;
+}
+
+.descr-card-item:first-child::before {
+  content: '';
+  position: absolute;
+  top: 108px;
+  left: -99px;
+  width: 230px;
+  height: 155px;
+  background-image: url('/img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-30deg);
+  z-index: 1;
+}
+
+.descr-card-item:first-child::after {
+  content: '';
+  position: absolute;
+  top: 667px;
+  left: 228px;
+  width: 200px;
+  height: 105px;
+  background-image: url('/img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-30deg);
+  z-index: 1;
+}
+
+.descr-card-item:last-child::before {
+  content: '';
+  position: absolute;
+  top: 1283px;
+  left: -99px;
+  width: 200px;
+  height: 105px;
+  background-image: url('/img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-30deg);
+  z-index: -1;
+}
+
+.descr-card-item:last-child::after {
+  content: '';
+  position: absolute;
+  top: 1907px;
+  left: 220px;
+  width: 200px;
+  height: 105px;
+  background-image: url('/img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-20deg);
+  z-index: 1;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .descr-clouds .descr-header {
+    text-align: left;
+    margin-bottom: 85px;
+  }
+  .descr-clouds {
+    padding-top: 0px;
+  }
+  .descr-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+  }
+  .descr-card-item {
+    max-width: 806px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 16px;
+    border: 2px solid $_brown;
+    background-color: $_200;
+  }
+
+  .descr-card-image {
+    width: 268px;
+    height: 258px;
+  }
+
+  .descr-card-text-wrap {
+    max-width: 460px;
+    padding: 16px;
+    background-color: $_white;
+  }
+
+  .descr-card-text {
+    font-size: 16px;
+  }
+
+  .descr-card-item:nth-child(odd) {
+    align-self: flex-end;
+  }
+
+  .descr-card-item:nth-child(even) {
+    align-self: flex-start;
+  }
+
+  .descr-card-item:nth-child(even) .descr-card-thumb {
+    order: 2;
+  }
+
+  .descr-card-item:nth-child(even) .descr-card-text-wrap {
+    order: 1;
+  }
+  .descr-card-item:first-child::before {
+    content: '';
+    
+    top: 28px;
+    left: 187px;
+    width: 375px;
+    height: 230px;
+    
+    z-index: -1;
+  }
+  
+  .descr-card-item:first-child::after {
+    content: '';
+    
+    top: 290px;
+    left: 1037px;
+    width: 375px;
+    height: 230px;
+    transform: rotate(0deg);
+    z-index: 1;
+  }
+  
+  .descr-card-item:last-child::before {
+    display: none;
+  }
+  
+  .descr-card-item:last-child::after {
+    display: none;
+  }
+
+  .descr-card-second-item {
+    position: relative;
+    z-index: -2;
+
+  }
+
+  .descr-clouds::before {
+    content: '';
+  position: absolute;
+  top: 639px;
+  left: 9px;
+  width: 269px;
+  height: 158px;
+  background-image: url('/img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(15deg);
+  z-index: -3;
+
+  }
+  .descr-card-second-item::after {
+    content: '';
+  position: absolute;
+  top: 202px;
+  left: 626px;
+  width: 272px;
+    height: 167px;
+  background-image: url('/img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+  z-index: -1;
+
+  }
+  
+
+
+
+}
