@@ -9,7 +9,7 @@
 
 .our-title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
@@ -157,7 +157,6 @@
   z-index: -1;
 }
 
-
 @media screen and (min-width: 1200px) {
   .our {
     scroll-margin-top: 102px;
@@ -264,7 +263,6 @@
     display: none;
   }
   .our-clouds::after {
-    
     top: 994px;
     left: 862px;
     width: 349px;
@@ -273,14 +271,12 @@
   }
 
   .our-clouds::before {
-    
-    
     top: 470px;
     left: -58px;
     width: 349px;
     height: 213px;
-    
+
     transform: rotate(360deg);
-   z-index: 1;
+    z-index: 1;
   }
 }

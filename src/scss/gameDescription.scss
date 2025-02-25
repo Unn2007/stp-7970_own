@@ -17,6 +17,7 @@
   align-items: center;
   row-gap: 16px;
 }
+
 .descr-card-item {
   max-width: 288px;
   padding: 8px 8px 10px 8px;
@@ -106,7 +107,6 @@
   z-index: 1;
 }
 
-
 @media screen and (min-width: 1200px) {
   .description {
     scroll-margin-top: 102px;
@@ -170,18 +170,18 @@
   }
   .descr-card-item:first-child::before {
     content: '';
-    
+
     top: 28px;
     left: 187px;
     width: 375px;
     height: 230px;
-    
+
     z-index: -1;
   }
-  
+
   .descr-card-item:first-child::after {
     content: '';
-    
+
     top: 290px;
     left: 1037px;
     width: 375px;
@@ -189,11 +189,11 @@
     transform: rotate(0deg);
     z-index: 1;
   }
-  
+
   .descr-card-item:last-child::before {
     display: none;
   }
-  
+
   .descr-card-item:last-child::after {
     display: none;
   }
@@ -201,39 +201,32 @@
   .descr-card-second-item {
     position: relative;
     z-index: -2;
-
   }
 
   .descr-clouds::before {
     content: '';
-  position: absolute;
-  top: 639px;
-  left: 9px;
-  width: 269px;
-  height: 158px;
-  background-image: url('/img/cloud1x.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: rotate(15deg);
-  z-index: -3;
-
+    position: absolute;
+    top: 639px;
+    left: 9px;
+    width: 269px;
+    height: 158px;
+    background-image: url('/img/cloud1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(15deg);
+    z-index: -3;
   }
   .descr-card-second-item::after {
     content: '';
-  position: absolute;
-  top: 202px;
-  left: 626px;
-  width: 272px;
+    position: absolute;
+    top: 202px;
+    left: 626px;
+    width: 272px;
     height: 167px;
-  background-image: url('/img/cloud1x.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: rotate(0deg);
-  z-index: -1;
-
+    background-image: url('/img/cloud1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
   }
-  
-
-
-
 }

@@ -3,7 +3,7 @@
 }
 
 .reviews-clouds {
-  padding-bottom: 161px;
+  padding-bottom: 60px;
 }
 .review-container {
   display: flex;
@@ -87,6 +87,14 @@
   .reviews {
     scroll-margin-top: 102px;
   }
+
+  .reviews-clouds .reviewsSwiper {
+    padding-bottom: 0px;
+  }
+  .reviews-clouds {
+    padding-bottom: 150px;
+  }
+
   .user-title.how-title {
     text-align: left;
   }
