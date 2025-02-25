@@ -1,3 +1,6 @@
+.reviews-clouds {
+  padding-bottom: 161px;
+}
 .review-container {
   display: flex;
   flex-direction: column;
@@ -33,7 +36,56 @@
   line-height: 1.2;
 }
 
+.reviews-clouds .reviewsSwiper {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.reviews-clouds .reviewsSwiper .reviews-swiper-button-next,
+.reviews-clouds .reviewsSwiper .reviews-swiper-button-prev {
+  position: absolute;
+  top: 327px;
+  background-color: $_purple_200;
+  width: 60px;
+  height: 60px;
+  border-radius: 24px;
+}
+
+.reviewsSwiper .reviews-swiper-button-prev {
+  left: 74px;
+}
+
+.reviewsSwiper .reviews-swiper-button-next {
+  right: 74px;
+}
+
+.reviewsSwiper .reviews-swiper-button-prev::after,
+.reviewsSwiper .reviews-swiper-button-next::after {
+  font-size: 24px;
+  color: $_white;
+}
+
+.reviews-clouds::after {
+  content: '';
+  position: absolute;
+  top: 354px;
+  left: 209px;
+  width: 177px;
+  height: 111px;
+  background-image: url('/img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-30deg);
+  z-index: -1;
+}
+
 @media screen and (min-width: 1200px) {
+  .user-title.how-title {
+    text-align: left;
+  }
+  .swiper.reviewsSwiper {
+    max-width: 1080px;
+  }
   .review-container {
     max-width: 349px;
   }
@@ -41,8 +93,16 @@
   .review-text {
     font-size: 16px;
   }
-  .swiper-button-next,
-  .swiper-button-prev {
+
+  .reviewsSwiper .swiper-slide {
+    width: 349px;
+  }
+
+  .reviewsSwiper .reviews-swiper-button-next,
+  .reviewsSwiper .reviews-swiper-button-prev {
+    display: none;
+  }
+  .reviews-clouds::after {
     display: none;
   }
 }

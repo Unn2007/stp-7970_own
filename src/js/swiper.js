@@ -16,11 +16,12 @@ var swiper = new Swiper(".howSwiper", {
   });
 
   var swiperReviews = new Swiper(".reviewsSwiper", {
+    modules: [Navigation],
     slidesPerView: 1,  
     spaceBetween: 20,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".reviews-swiper-button-next",
+      prevEl: ".reviews-swiper-button-prev",
     },
     allowTouchMove: true, 
     breakpoints: {
