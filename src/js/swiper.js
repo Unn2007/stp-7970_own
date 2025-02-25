@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-cards';
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".howSwiper", {
     effect: "cards",
     grabCursor: true,
     modules: [EffectCards],
@@ -13,4 +13,21 @@ var swiper = new Swiper(".swiper", {
         perSlideOffset: 6, 
         perSlideRotate: 1, 
       },
+  });
+
+  var swiperReviews = new Swiper(".reviewsSwiper", {
+    slidesPerView: 1,  
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    allowTouchMove: true, 
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,  
+        spaceBetween: 30,
+        allowTouchMove: true, 
+      }
+    }
   });
