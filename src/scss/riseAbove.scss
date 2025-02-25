@@ -1,9 +1,6 @@
-
-
 .hero {
   padding-top: 40px;
   scroll-margin-top: 20px;
-
 }
 
 .hero-cloud-container {
@@ -124,5 +121,122 @@
     left: -150px;
     width: 429px;
     height: 290px;
+  }
+}
+
+.accept-cookie-modal {
+  position: fixed;
+  bottom: 280px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 288px;
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 7;
+}
+
+.accept-cookie-modal-content {
+  background-color: #fff;
+  padding: 16px 12px 17px 12px;
+  border-radius: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  text-align: center;
+  width: 288px;
+  height: 290px;
+}
+
+.accept-cookie-modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4f4333;
+  margin-bottom: 16px;
+}
+
+.accept-cookie-modal-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #4f4333;
+  margin-bottom: 24px;
+}
+
+.accept-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accept-cookie-modal-btn {
+  background: #a243b1;
+  border: 1px solid #4f4333;
+  border-radius: 12px;
+  width: 258px;
+  height: 48px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.accept-cookie-modal-btn:focus {
+  background: #f2c2fb;
+}
+
+@media screen and (min-width: 1200px) {
+  .accept-cookie-modal {
+    bottom: 129px;
+
+    justify-content: center;
+
+    align-items: flex-end;
+  }
+
+  .accept-cookie-modal-content {
+    padding: 24px;
+    border-radius: 16px;
+    width: 898px;
+    height: 172px;
+    display: flex;
+  }
+
+  .accept-text-wrapper {
+    margin-right: 141px;
+  }
+
+  .accept-cookie-modal-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  .accept-cookie-modal-text {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    width: 451px;
+    text-align: left;
+  }
+
+  .accept-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .accept-cookie-modal-btn {
+    width: 258px;
+    height: 114px;
+  }
+
+  .accept-cookie-modal-btn:focus {
+    background: #f2c2fb;
   }
 }
