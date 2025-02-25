@@ -1,3 +1,7 @@
+.reviews {
+  scroll-margin-top: 60px;
+}
+
 .reviews-clouds {
   padding-bottom: 161px;
 }
@@ -80,6 +84,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .reviews {
+    scroll-margin-top: 102px;
+  }
   .user-title.how-title {
     text-align: left;
   }

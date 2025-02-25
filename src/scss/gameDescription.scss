@@ -1,3 +1,7 @@
+.description {
+  scroll-margin-top: 60px;
+}
+
 .descr-header {
   margin-bottom: 32px;
 }
@@ -104,6 +108,10 @@
 
 
 @media screen and (min-width: 1200px) {
+  .description {
+    scroll-margin-top: 102px;
+  }
+
   .descr-clouds .descr-header {
     text-align: left;
     margin-bottom: 85px;

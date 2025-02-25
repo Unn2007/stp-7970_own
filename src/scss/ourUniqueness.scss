@@ -1,4 +1,5 @@
 .our {
+  scroll-margin-top: 60px;
 }
 .container {
   position: relative;
@@ -158,6 +159,9 @@
 
 
 @media screen and (min-width: 1200px) {
+  .our {
+    scroll-margin-top: 102px;
+  }
   .our-title {
     font-size: 32px;
     text-align: left;

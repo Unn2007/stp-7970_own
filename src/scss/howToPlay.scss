@@ -1,3 +1,6 @@
+.how {
+  scroll-margin-top: 60px;
+}
 .swiper {
   width: 100%;
   max-width: 293px;
@@ -100,6 +103,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .how {
+    scroll-margin-top: 102px;
+  }
   .how-mySwiper-slide {
     max-width: 733px;
   }
