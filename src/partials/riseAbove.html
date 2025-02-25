@@ -6,14 +6,23 @@
       Wings are waiting for you - conquer the sky!
     </p>
     <div class="hero-images">
-      <img
-        srcset="./img/iPhone15Pro1x.png 1x, ./img/iPhone15Pro2x.png 2x"
-        width="320"
-        height="252"
-        src="./img/iPhone15Pro1x.png"
-        alt="iPhone15Pro"
-        class="hero-img"
-      />
+      <picture class="hero-img">
+        <source
+          srcset="
+            ./img/hero_img/iPhone15-desc1x.png 1x,
+            ./img/hero_img/iPhone15-desc2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="hero-img"
+          
+          src="./img/hero_img/iPhone15-mob1x.png"
+          srcset="./img/hero_img/iPhone15-mob2x.png 2x"
+          alt="iPhone15Pro"
+        />
+      </picture>
+      
       <img
         srcset="./img/favikon1x.png 1x, ./img/favikon2x.png 2x"
         width="80"
