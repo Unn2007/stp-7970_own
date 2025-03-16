@@ -1,6 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function () {
-  
-// });
+
 const cookieModal = document.getElementById('cookieModal');
   const acceptCookiesBtn = document.getElementById('acceptCookies');
   const declineCookiesBtn = document.getElementById('declineCookies');
