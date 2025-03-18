@@ -104,4 +104,66 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 24px;
+  }
+  .footer-wrapper {
+    position: relative;
+    display: flex;
+    padding-bottom: 0px;
+  }
+  .footer-logo {
+    align-self: flex-start;
+
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
+
+  .footer-play {
+    flex-grow: 1;
+    margin-bottom: 0px;
+    order: 2;
+    padding-top: 58px;
+  }
+  .footer-play-text {
+    margin-bottom: 32px;
+
+    font-size: 26px;
+  }
+  .footer-play-link {
+    max-width: 352px;
+    margin: 0 auto;
+
+    padding: 9px 110px;
+  }
+
+  .footer-cloud {
+    width: 413px;
+    height: 288px;
+    transform: rotate(-11.28deg);
+    margin-right: 64px;
+    margin-left: initial;
+
+    order: 1;
+  }
+
+  .footer-nav-list {
+    position: absolute;
+    top: 95px;
+    max-width: 215px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .footer-nav-item:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .footer-rights {
+    font-weight: 400;
+
+    line-height: 100%;
+  }
 }
