@@ -23,7 +23,7 @@ body {
 }
 
 .back-link-wrap {
-padding-left: 24px;
+  padding-left: 24px;
 }
 
 .back-link-cookies {
@@ -31,14 +31,14 @@ padding-left: 24px;
   display: inline-block;
   padding: 13px 12px;
   margin-bottom: 20px;
- 
+
   background-color: $_200;
   border-radius: 8px;
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
   text-transform: initial;
-  color:$_purple_200;
+  color: $_purple_200;
   filter: url(#stroke);
   text-shadow: 2px 2px 0px #f2c2fb, -2px -2px 0px #f2c2fb, -2px 2px 0px #f2c2fb,
     2px -2px 0px #f2c2fb;
@@ -112,7 +112,7 @@ padding-left: 24px;
   }
   .back-link-wrap {
     padding-left: 93px;
-    }
+  }
 
   .content-wrapper {
     max-width: 900px;

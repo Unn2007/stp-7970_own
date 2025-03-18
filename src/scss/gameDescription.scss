@@ -31,7 +31,6 @@
   height: 246px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .descr-card-text-wrap {
@@ -110,20 +109,14 @@
   z-index: 1;
 }
 .descr-card-image.second-image {
-
   width: 158px;
   height: 258px;
- 
-
 }
 
 .descr-card-image.third-image {
   width: 239px;
   height: 258px;
- 
-
 }
-
 
 @media screen and (min-width: 1200px) {
   .description {
@@ -157,8 +150,6 @@
     background-color: $_200;
   }
 
-  
-
   .descr-card-text-wrap {
     max-width: 460px;
     padding: 16px;
@@ -186,18 +177,18 @@
   }
   .descr-card-item:first-child::before {
     content: '';
-    
+
     top: 28px;
     left: 187px;
     width: 375px;
     height: 230px;
-    
+
     z-index: -1;
   }
-  
+
   .descr-card-item:first-child::after {
     content: '';
-    
+
     top: 290px;
     left: 1037px;
     width: 375px;
@@ -205,11 +196,11 @@
     transform: rotate(0deg);
     z-index: 1;
   }
-  
+
   .descr-card-item:last-child::before {
     display: none;
   }
-  
+
   .descr-card-item:last-child::after {
     display: none;
   }
@@ -217,46 +208,37 @@
   .descr-card-second-item {
     position: relative;
     z-index: -2;
-
   }
 
   .descr-clouds::before {
     content: '';
-  position: absolute;
-  top: 639px;
-  left: 9px;
-  width: 269px;
-  height: 158px;
-  background-image: url('/img/cloud1x.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: rotate(15deg);
-  z-index: -3;
-
+    position: absolute;
+    top: 639px;
+    left: 9px;
+    width: 269px;
+    height: 158px;
+    background-image: url('/img/cloud1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(15deg);
+    z-index: -3;
   }
   .descr-card-second-item::after {
     content: '';
-  position: absolute;
-  top: 202px;
-  left: 626px;
-  width: 272px;
+    position: absolute;
+    top: 202px;
+    left: 626px;
+    width: 272px;
     height: 167px;
-  background-image: url('/img/cloud1x.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: rotate(0deg);
-  z-index: -1;
-
+    background-image: url('/img/cloud1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    z-index: -1;
   }
-  
-  .descr-card-image.second-image {
 
+  .descr-card-image.second-image {
     width: 190px;
     height: 258px;
-    
-  
   }
-  
-
-
 }

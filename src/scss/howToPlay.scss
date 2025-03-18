@@ -16,8 +16,6 @@
 }
 
 .how-title {
- 
-  
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
@@ -112,12 +110,11 @@
 
   .how-clouds {
     position: relative;
-   
+
     padding-bottom: 229px;
   }
 
   .how-title {
-   
     font-size: 32px;
     margin-bottom: 86px;
   }
@@ -128,7 +125,6 @@
     justify-content: center;
     align-items: center;
     column-gap: 21px;
-    
 
     border: 4px solid $_brown;
   }
@@ -154,33 +150,28 @@
   .slide-title {
     font-size: 24px;
   }
-  
+
   .swiper {
     width: 100%;
     max-width: 733px;
-   
   }
   .how-clouds::before {
-   
     top: 68px;
     left: -31px;
     width: 318px;
     height: 243px;
-    
+
     transform: rotate(0deg);
     z-index: -1;
   }
-  
+
   .how-clouds::after {
-    
     top: 463px;
     left: 802px;
     width: 397px;
     height: 243px;
-   
+
     transform: rotate(0deg);
     z-index: -1;
   }
-
 }
-
