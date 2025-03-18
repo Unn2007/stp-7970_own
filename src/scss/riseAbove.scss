@@ -1,10 +1,10 @@
 .hero {
+  position: relative;
   padding-top: 40px;
   scroll-margin-top: 20px;
 }
 
 .hero-cloud-container {
-  position: relative;
   overflow: visible;
 }
 .hero-cloud-container::before {
@@ -130,7 +130,7 @@
 
 .accept-cookie-modal {
   position: fixed;
-  bottom: 280px;
+  top: 240px;
   left: 50%;
   transform: translate(-50%, 0);
   max-width: 288px;
@@ -195,7 +195,7 @@
 
 @media screen and (min-width: 1200px) {
   .accept-cookie-modal {
-    bottom: 129px;
+    top: 560px;
 
     justify-content: center;
 
