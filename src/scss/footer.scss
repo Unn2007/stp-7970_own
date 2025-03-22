@@ -16,6 +16,7 @@
 }
 
 .footer-logo-text {
+  position: relative;
   font-weight: 700;
   font-size: 20px;
   line-height: 100%;
@@ -115,6 +116,9 @@
     align-self: flex-start;
     margin-bottom: 0px;
     margin-right: 20px;
+  }
+  .footer-logo-text {
+    position: initial;
   }
 
   .footer-play {
