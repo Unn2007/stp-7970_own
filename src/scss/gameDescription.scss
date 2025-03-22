@@ -1,5 +1,6 @@
 .description {
   scroll-margin-top: 60px;
+  position: relative;
 }
 
 .descr-header.how-title {
@@ -118,9 +119,37 @@
   height: 258px;
 }
 
+
+
+.description::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: 217px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(82, 135, 200, 1);
+  filter: blur(120px);
+  z-index: -10;
+}
+.description::after {
+  content: '';
+  position: absolute;
+  top: 800px;
+  left: -70px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(82, 135, 200, 1);
+  filter: blur(120px);
+  z-index: -10;
+}
+
 @media screen and (min-width: 1200px) {
   .description {
     scroll-margin-top: 102px;
+    position: initial;
   }
 
   .descr-clouds .descr-header {
@@ -241,4 +270,11 @@
     width: 190px;
     height: 258px;
   }
+
+  .description::before {
+   display: none;
+  }
+  .description::after {
+    display: none;
+   }
 }
