@@ -1,11 +1,11 @@
 {
-  "name": "stp-7970",
+  "name": "stp-7970_own",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/stp-7970_own/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
     "predeploy": "npm run build",
