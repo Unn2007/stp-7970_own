@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experience thrilling aerial combat and navigate through dynamic storms in Storm Wings. Customize your aircraft, battle enemies, and master the skies in this action-packed adventure game."
+    />
+    <meta
+      name="keywords"
+      content="Storm Wings, aerial combat, storm navigation, flying game, action game, multiplayer, plane customization, dogfights, dynamic weather"
+    />
+    <meta name="author" content="Storm Wings Team" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://playqueststorm.com" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="500x500"
+      href="/stp-7970_own/assets/favicon-500x500-f6a8f207.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADsklEQVR4nAXBW2xTZQDA8f85/bpe1t1KN3bpYMCWyGQXggvjFjSEhAT2gAmSzBdEE42RGEOigSiL8fYAwaiBB9CQACaoUTBhDoQNpyCIzA3HOmDduuK2rmPtej1n7Tnt5++nAMz7fmwvrsoeisuKtenHN5acu+W0NXXst2x58Dru3W/SdfgyVSWxnHffiUw0tRjJOMsHkzHts4ONhXeU23G5vjk/e02O9hclqp/j+qWvSN88S2J/D9vqUzz89zbfXvRTtWI5pbXLyfx8FO/B8zgaWpNG9Ol21bDSlQtNFkUG/jT06YCcGPWzuqGGue4vmBhPo+s1rFtVTnh6lsFLZ9lcFpZz93oNnJYi02LtElOxbGvlyjYZGp8SCWuVEtFNjBxsto2wo6UCe9UmyG7DN+rn9x9Oo8ZCytNYXJQvmHIxZ2lR51KZojuGRekxPconp76hUGSxFZexft+H2JfWo8cioAgamxt546NjhGU9E9+fUx5d+0lRrIVlajpvUaP/hdFSScTMGNt27mHjwXOEwklmA48psLsYufcXT0Z95LFRt7yFF+enWDp4hejMpFBzqPSdOcG9o4dpcNvZuqODwPgT7t/5DU3TyKMyPTZMIhJGVWxYpEHtEjct4UlCA9cVdWHhKZ6pMXYHR2hTdRS7gzOnzvPdLwNULluJ1e4gLdwcO36ayYAPU0tTXVrK49kQBd5GRHo2wPNlDtzeagJDDxi+9St7Xt5LU2szfT1X8NbV4ht+iN1VgUQgMjrByByPXj2Cd91WhKlaSU8FWeZy0mSxcf7j46zv3MnapjZGHgzTe/kiB94+gH/MT3/PBe5296Jv2EX9K++wMBFGedenpZP/9DtdJw/RKdP84Swn2FRLY7kLm8tDSjMYHBigrb2dxXiQvnkbq946iU1IojMJQ5XZbL544w6Sn3dz9pktZKYCqBlJzepNjPpHyMiHdOxtZnWjky1rIjzb0YkQTvT4IhZVMYUq1HgmkiwscriRh79Whvq6qQ+epkZe4L0PXsBaUkFU8zCd0Bm8+oh4gR1nLiMXUybCqi4Icvn7FpurZjEVMyyaJqq378L0e/CFT3IjuIFY2kEkniJilBKd28CKymKkaZg5U7VKadwXiskRPRFttxa63Pl8Bn0miulu4lLwJVI3x9FDT8jpGlaZo6JuDdJZjcwLq6lrMT2R7FIAXrvoX1dQXPy+KmRrVs86hN2OMFPK/N2rWBwuHB4vorRSyoISMklNd3lKhjC0T7/cvuzv/wFUy8G5UbTFJwAAAABJRU5ErkJggg=="
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Wings</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <script type="module" crossorigin src="/stp-7970_own/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/stp-7970_own/assets/vendor-75c5066b.js">
+    <link rel="stylesheet" href="/stp-7970_own/assets/vendor-4362381a.css">
+    <link rel="stylesheet" href="/stp-7970_own/assets/index-8c40b454.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header-wrapper">
+      <img
+        srcset="/stp-7970_own/assets/favikon1x-94a801d9.png 1x, /stp-7970_own/assets/favikon2x-b0527e29.png 2x"
+        width="42"
+        height="42"
+        src="/stp-7970_own/assets/favikon1x-94a801d9.png"
+        alt="Favicon Storm Wings"
+        class="logo-img"
+      />
+      <h2 class="logo-text">Storm Wings</h2>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#description" class="nav-link">Game Description</a>
+          </li>
+          <li class="nav-item">
+            <a href="#advantages" class="nav-link">Advantages</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link">User Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="#how" class="nav-link">How to Play</a>
+          </li>
+          <li class="nav-item">
+            <a href="#uniqueness" class="nav-link">Our Uniqueness</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="burger-button" data-modal-open>
+        <img
+          width="16"
+          height="14"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAQCAYAAAAbBi9cAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA2SURBVHgB7dEhCgBQCAPQ8U+w+1/2GywWiw4x+ECwLIwBjqhjfH7z+CAmqbbTrSbPDrjV8qwBUhow9xWdKKUAAAAASUVORK5CYII="
+          alt="burger-button"
+          class="burger-img"
+        />
+      </button>
+    </div>
+  </div>
+</header>
+
+    <div class="backdrop is-hidden" data-backdrop>
+  <div class="modal">
+    <button type="button" class="back-button is-hidden" data-modal-close>
+      <img
+        width="20"
+        height="16"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFVSURBVHgBvZMxT4NgEIbvQI1jnbQ6CDGxdqumg5vE6GroT/EXlP6DdnRzdaNOGrXipok2jHQpuFg2GZs05TzANlqLAYK+yZd7L3ffw4XcB/BHEuMK6lFV25bWlZ79ZkBe4ABKRHVEUEryBmaBL8RBo4w8AcGGDMJYKJGDol/Tb0wTMghjoCb6DDVMBzIKf0CTy+NjIpAOi0tt/erR+VoUouATpFeBj0KATRqN7JPDqgazE0M49V6dCMMix8Zl51n7jVo73j3wx3gOiNIURnSqd7rNwE/XzeoPHspbxaCsJFkzq+++9uxBa3InIuN+eXP1zHLcofi9OR18cqckFwvIUE6XSUCXP/gkzmtMC2fQ9Y5cVHniNQQccn4hzGvUb7sNRNLYGkTje0ggH6AVGqJKEBBykqpUCiSK72y99t3LigA5iR+T92mDNYTcwLPKDcy/QoL/0AfB0qJPCjXukQAAAABJRU5ErkJggg=="
+        alt="burger-button"
+        class="back-img"
+      />
+    </button>
+
+    <nav class="modal-nav is-hidden" data-modal>
+      <ul class="modal-nav-list">
+        <li class="modal-nav-item">
+          <a href="#home" class="modal-nav-link">Home</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#description" class="modal-nav-link">Game Description</a>
+        </li>
+        <li class="modal-nav-item">
+          <a href="#advantages" class="modal-nav-link">Advantages</a>
+        </li>
+        <li class="modal-nav-item">
+          <a href="#reviews" class="modal-nav-link">User Reviews</a>
+        </li>
+        <li class="modal-nav-item">
+          <a href="#how" class="modal-nav-link">How to Play</a>
+        </li>
+        <li class="modal-nav-item">
+          <a href="#uniqueness" class="modal-nav-link">Our Uniqueness</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+    <section class="hero" id="home">
+  <div class="container hero-cloud-container">
+    <h1 class="hero-header">Rise Above the Storm!</h1>
+    <p class="hero-text">
+      Dive into the battle of the skies - become a Storm Wings legend! Storm
+      Wings are waiting for you - conquer the sky!
+    </p>
+    <div class="hero-images">
+      <picture class="hero-img">
+        <source
+          srcset="/stp-7970_own/assets/iPhone15-desc1x-d7f0bdc8.png 1x, /stp-7970_own/assets/iPhone15-desc2x-195bebcc.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="hero-img"
+          src="/stp-7970_own/assets/iPhone15-mob1x-ea98c163.png"
+          srcset="/stp-7970_own/assets/iPhone15-mob2x-a038ef94.png 2x"
+          alt="iPhone15Pro"
+        />
+      </picture>
+
+      <img
+        srcset="/stp-7970_own/assets/favikon1x-94a801d9.png 1x, /stp-7970_own/assets/favikon2x-b0527e29.png 2x"
+        width="80"
+        height="80"
+        src="/stp-7970_own/assets/favikon1x-94a801d9.png"
+        alt="Favicon Storm Wings"
+        class="hero-logo-img"
+      />
+    </div>
+    <a
+      href="https://play.google.com/store/apps/details?id=com.halfbrick.stormwings&hl=en&gl=us"
+      target="_blank"
+      class="hero-link"
+    >
+      <img
+        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJESURBVHgBrZZPaBNBFIffzE5iFSOh0BYv2h48ChalIBRaSw5CDyL1oF6MoIeeGm+iQpODoIg2uQkK5uafg0b0IqVNCh6KBrsgiLeuHiRUrCuNsSSTee5EtqRp0n279Tskw+yb37dvhl2WgcOxx2eSwHFKjxlizkCVWjyXs+A/wI4+mUgzgKlNk4AWKsgUzz9Pww5hxx/e/lnb+y7a9qIWASaKZ1+8hICwsZtlrPQ+ABl527kIMBt02xoCPfCSNECWkusybV7M2UCEu4M9K5dBrA1vX81wOrSbLw09nbgARDY6cCF10gBNgeq017bx1glSJ//u7YhkxvLJZ+OP/uS7+skCP5IIq8G9fYtxQ9Xz67OhBFlAlVyPfIBD4pd+OPsNhjPVudCynDdOkQRekhuRJRgJlzbNaREqlnNEG9u25ZDb0XrwOnx811evZbYjO8GBQHMnxHBNlHGcIQlcybWVVWq4y6igVk5+ugXDpTJU690QPrxKW4RgkjrQ4SOlN43x79cHofqxm7AKbTAg4SloDnchSAqyVh8MjckF4Te8WaJp3i7n1W4xzuI62J0TQcK3Sn7YCDwZjslMaw0PGu5SfnUgKdbqA+FYLdPuuggejgXg8krfrGnCfOcq4TccESyOEO/JFxeAAKeHo42IyYqqDfbk35PCNYIUjpCtK5naXzAt8Im49Pmu7YRHOyQXmGJJP3fcinG/t9Ll/I+2BNsK2NW+ueLkHevbF9gBTP98jw1NK4VxxvQhYraiZGagYJK/HLbjL3HNJcY8dk27AAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA2CAYAAACBWxqaAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQqSURBVHgBzZpNbxtFGMefWa9DoRJEIgkNIORK8AGCCOoNJw1vB6SmBUFPdT5BY3HiAHUOKNfkwDnpAVKkIsqFS1t2ewAhGlRLnJEtDlBaVXXrxn3ZmX06M864tuuXfXkm8e9gxZv1zP/nfeYZrbwMdslvHBu/d8BdBobvqLfNo1h2GFv749MfzsKIwtTLka3PcoIFHgLkep+EVcZYaRRFtMDsuROVfuG7uOCiKP5+8kIVRgQ2u3W8gIxtxPoQ4GYGw5VREHEYnz4NMUFgBcEc7+3vT5yCfYbNrd7AnZdXIXzmH0iCWh+IztL2yfM+7AMOC5+Dg/9+Ac7D1yAJ8mrkZOfyZs8d3ziydSwHe4yjXtJKKFRZcZapvLX1cQn2EDb/9T1shXAakKacWoPuYdvtEFBQSeziy7a7ZLNbOd0HKMqpjbwqK5vrw+l1kFjCatt9qoQ6JqYtp+aExG3XGfRP6iuhoG67zrATbEgoqNruUAGFLYnm4Hhm8fwHFe5lE62PSAJ6HksS05kGrD//Ww4FbgaXXO++dyAX5/ORBRTUEir8Ny/8CtOyWeySdwWvPLqc3YgqEktAQSXRI/yTORALmVB4UcoqtoCeIKXEoPCtORB1WcmrUQkuuvl+5yUS0BMklIgSvmMeKSI3D69fWSUW0IPHlIgbvmMuWVZqfcirUWo/nkpADxxRIk34zgnhjCorczVSC+gxh0iQhTfzybJSixw9GCcR0IP2kaAO35pPSvDQPU0moAftkrAVvgVCnlRAYSRe5RN2wzehF1BM7dyF1Z8r8FKdg23IBSbvX4evrhXhxf9vQ/3bNyC8MwbWQCiTCpjwkw+u6/cqvE0JxnCNTKA7vMGWBMo7O3dBnCUR6BfeQC2hwotAzKm/UwsMC2+gkcCa3IlL2bqYefZDqKojqQSihjeklPB5IGayR/kKW4SaOZhYIG54Q2wJ2Wlkynx2gc+Zb72dRAJJwxuiSWBN3vgvZ9/lM9l5fqXfWbEF0oY3DJRgsObWxeGxhWB92DixBKjCG3pI+BhyVefF9jofRGQB6vAGLfHd61UmcFHV+dh7suZj4EY5yVZ4XecIa/VbzvrE+yLSN97NUAFr4RE2d0JePOyXEwU3DBSwEx59FrLSpHf1ChDQV4A+vNxFAZenLv9J+qtNTwHa8M06b4R8PW259OIpAeLwvhB8adovV8ESHQJU4VHdaCAsT3rbJHU+iJYATXishcBKh365OnQHpUILkISXdS7b4oqNOh+EezCo1z7/68vx5OHRB4cXpy6WY+2gVLBrH33ivdKo5iEmss6rss4LVP08Kc6hnb9j9mXVFrHUCIOZ/Q6v0A883Tw6q57Wyg89W2//QXGv63wQehG7IljkmeyP/SVot39KWPub/+bfLLgsc8o8fiZ/lC4zBpsTl7Z/ghHlMX/0nTss8PEZAAAAAElFTkSuQmCC 2x"
+        width="24"
+        height="27"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJESURBVHgBrZZPaBNBFIffzE5iFSOh0BYv2h48ChalIBRaSw5CDyL1oF6MoIeeGm+iQpODoIg2uQkK5uafg0b0IqVNCh6KBrsgiLeuHiRUrCuNsSSTee5EtqRp0n279Tskw+yb37dvhl2WgcOxx2eSwHFKjxlizkCVWjyXs+A/wI4+mUgzgKlNk4AWKsgUzz9Pww5hxx/e/lnb+y7a9qIWASaKZ1+8hICwsZtlrPQ+ABl527kIMBt02xoCPfCSNECWkusybV7M2UCEu4M9K5dBrA1vX81wOrSbLw09nbgARDY6cCF10gBNgeq017bx1glSJ//u7YhkxvLJZ+OP/uS7+skCP5IIq8G9fYtxQ9Xz67OhBFlAlVyPfIBD4pd+OPsNhjPVudCynDdOkQRekhuRJRgJlzbNaREqlnNEG9u25ZDb0XrwOnx811evZbYjO8GBQHMnxHBNlHGcIQlcybWVVWq4y6igVk5+ugXDpTJU690QPrxKW4RgkjrQ4SOlN43x79cHofqxm7AKbTAg4SloDnchSAqyVh8MjckF4Te8WaJp3i7n1W4xzuI62J0TQcK3Sn7YCDwZjslMaw0PGu5SfnUgKdbqA+FYLdPuuggejgXg8krfrGnCfOcq4TccESyOEO/JFxeAAKeHo42IyYqqDfbk35PCNYIUjpCtK5naXzAt8Im49Pmu7YRHOyQXmGJJP3fcinG/t9Ll/I+2BNsK2NW+ueLkHevbF9gBTP98jw1NK4VxxvQhYraiZGagYJK/HLbjL3HNJcY8dk27AAAAAElFTkSuQmCC"
+        alt="iPhone15Pro"
+        class="google-img"
+      />
+      Play Now
+    </a>
+    <div id="cookieModal" class="accept-cookie-modal">
+      <div class="accept-cookie-modal-content">
+        <div class="accept-text-wrapper">
+          <p class="accept-cookie-modal-title">Cookies Policy</p>
+          <p class="accept-cookie-modal-text">
+            We use cookies to improve your experience on our website. By
+            browsing this website, you agree to our use of cookies.
+          </p>
+        </div>
+        <div class="accept-btn-wrapper">
+          <button class="accept-cookie-modal-btn" id="acceptCookies">
+            ACCEPT COOKIES
+          </button>
+          <button class="accept-cookie-modal-btn" id="declineCookies">
+            DECLINE COOKIES
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="description" id="description">
+  <div class="container descr-clouds">
+    <h1 class="how-title descr-header">Game Description</h1>
+
+    <ul class="descr-card-container">
+      <li class="descr-card-item">
+        <div class="descr-card-thumb">
+          <picture class="descr-card-image">
+            <source
+              srcset="/stp-7970_own/assets/description_card1-mob1x-44162e97.png 1x, /stp-7970_own/assets/description_card1-mob2x-f5e934fd.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="descr-card-image"
+              src="/stp-7970_own/assets/description_card1-mob1x-44162e97.png"
+              srcset="/stp-7970_own/assets/description_card1-mob2x-f5e934fd.png 2x"
+              alt="Slide"
+            />
+          </picture>
+        </div>
+        <div class="descr-card-text-wrap">
+          <p class="descr-card-text">
+            Storm Wings takes players on a high-flying journey through dangerous
+            skies, where they take control of an
+            <span class="pink_color">elite pilot</span> in a world filled with
+            fierce aerial combat, extreme weather conditions, and high-stakes
+            missions. The game merges action, strategy, and customization into a
+            thrilling experience.
+          </p>
+        </div>
+      </li>
+
+      <li class="descr-card-item descr-card-second-item">
+        <div class="descr-card-thumb">
+          <picture class="descr-card-image second-image">
+            <source
+              srcset="/stp-7970_own/assets/description_card2-desc1x-38a9848f.png 1x, /stp-7970_own/assets/description_card2-desc2x-45a5b78b.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="descr-card-image second-image"
+              src="/stp-7970_own/assets/description_card2-mob1x-c65388a9.png"
+              srcset="/stp-7970_own/assets/description_card2-mob2x-cba0a0e6.png 2x"
+              alt="Slide"
+            />
+          </picture>
+        </div>
+        <div class="descr-card-text-wrap">
+          <p class="descr-card-text">
+            The game's dynamic weather system creates an ever-changing
+            battlefield, where no two missions are the same. Players will need
+            to learn how to anticipate the storm’s behavior, using it to their
+            advantage or risk being overwhelmed.
+            <span class="pink_color">Unlock new levels</span>, discover hidden
+            resources, and improve your flying abilities as you climb the ranks
+            of the elite.
+          </p>
+        </div>
+      </li>
+
+      <li class="descr-card-item">
+        <div class="descr-card-thumb">
+          <picture class="descr-card-image third-image">
+            <source
+              srcset="/stp-7970_own/assets/description_card3-mob1x-b12a1152.png 1x, /stp-7970_own/assets/description_card3-mob2x-7a55e8df.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="descr-card-image third-image"
+              src="/stp-7970_own/assets/description_card3-mob1x-b12a1152.png"
+              srcset="/stp-7970_own/assets/description_card3-mob2x-7a55e8df.png 2x"
+              alt="Slide"
+            />
+          </picture>
+        </div>
+        <div class="descr-card-text-wrap">
+          <p class="descr-card-text">
+            With multiplayer modes, players can compete against others in
+            real-time, putting their flying skills to the ultimate test. Whether
+            you're a beginner learning the basics or an expert mastering complex
+            maneuvers, Storm Wings offers something for every type of player.
+            <span class="pink_color">Explore the skies</span>, battle for
+            survival, and prove you have what it takes to rule the air.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+    <section class="advantages" id="advantages">
+  <div class="container">
+    <h2 class="advantages-title">Advantages</h2>
+    <div class="advantages-thumb">
+      <img
+        srcset="/stp-7970_own/assets/cloud-storm1x-f3de7726.png 1x, /stp-7970_own/assets/cloud-storm2x-225ac852.png 2x"
+        width="605"
+        height="383"
+        src="/stp-7970_own/assets/cloud-storm1x-f3de7726.png"
+        alt="Cloud Storm Wings"
+        class="advantages-cloud"
+      />
+    </div>
+    <div class="group-wrapper first-group">
+      <div class="advantages-wrapper">
+        <h3 class="advantages-part-title">Daily Events and Rewards:</h3>
+        <p class="advantages-part-text">
+          Participate in daily events for special rewards, ensuring there's
+          always something new to look forward to.
+        </p>
+      </div>
+      <div class="advantages-wrapper">
+        <h3 class="advantages-part-title">Dynamic Weather Conditions:</h3>
+        <p class="advantages-part-text">
+          Battle through intense storms that change unpredictably, adding layers
+          of strategy to every mission.
+        </p>
+      </div>
+      <div class="advantages-wrapper cloud first-cloud">
+        <h3 class="advantages-part-title">Aircraft Customization:</h3>
+        <p class="advantages-part-text">
+          Customize and upgrade your plane with a wide range of weapons and
+          parts to suit your playstyle.
+        </p>
+      </div>
+    </div>
+    <div class="group-wrapper single">
+      <div class="advantages-wrapper">
+        <h3 class="advantages-part-title">Challenging Levels:</h3>
+        <p class="advantages-part-text">
+          Each level introduces new enemies, obstacles, and challenges, keeping
+          the gameplay fresh and engaging.
+        </p>
+      </div>
+    </div>
+    <div class="group-wrapper single">
+      <div class="advantages-wrapper">
+        <h3 class="advantages-part-title">Multiplayer Mode:</h3>
+        <p class="advantages-part-text">
+          Compete against other pilots in real-time, adding a competitive edge
+          to your flying skills.
+        </p>
+      </div>
+    </div>
+    <div class="group-wrapper">
+      <div class="advantages-wrapper cloud second-cloud">
+        <h3 class="advantages-part-title">Intuitive Gameplay:</h3>
+        <p class="advantages-part-text">
+          Simple and accessible mechanics make it easy for new players, while
+          the depth of the game provides advanced challenges for veterans.
+        </p>
+      </div>
+      <div class="advantages-wrapper">
+        <h3 class="advantages-part-title">
+          Free-to-Play with Optional Purchases:
+        </h3>
+        <p class="advantages-part-text">
+          Enjoy the game without spending a penny, with the option to buy
+          enhancements that help you progress faster.
+        </p>
+      </div>
+      <div class="advantages-wrapper">
+        <h3 class="advantages-part-title">Immersive Aerial Combat:</h3>
+        <p class="advantages-part-text">
+          Engage in thrilling dogfights with enemies in the sky, with
+          easy-to-learn yet hard-to-master controls.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="reviews" id="reviews">
+  <div class="container reviews-clouds">
+    <h2 class="user-title how-title">User Reviews</h2>
+    <div class="swiper reviewsSwiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="review-container">
+            <div class="review-img-thumb">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAAUCAYAAABcbhl9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7ZjdTQJBEMf/s3wYEh8oQStQO9BHo8ZYgVCBdqCUYCWSGORROhA7uA7kgeTCJew4e4ggX3ece2eM8w8cy+7sj01mmMwOoPp/GnZwGD5iDzlJ+f74lGQQdrFnLL26cTXifbrCAB6lfL98gyRZHMuz7t6jChrwLeV75Sc61BDdfY0NXcKzlO+Xv9Gh4ZNEB89yNzOO4zlPUr5//kaHloy5TjOXVcr3z4+LIldFVWFumLhOEhFMkrN5krc37AxkcxCPmYII9mH3DP1Vpsovjl923yuMW4FdC8S9Ph8Jcj+MaTpgVCeD5ipT5RfHj1OuLeHeeRzZFYwjtNYtKr84fuzQ2ikCS3wif+H+tiS3R+5HR7Wr9QdSfnF8Mw+tRHwiFu20MBC33Z40l2nlF8Nf2SmKnunFlcibWFJDv+2c4xAZpPz8+MmdojUiQ+/IUcrPxl/pUImOxMhKY/OTvcrPZrPk0KgTG66//8xUH3a2P7Ty8+UvOXSMJaOBtdyy4OZiaV3m7dtcys+XX16cICvAqZuliqqO0JxWUWGXe8a6OxPF7SdDOMCWUn6+/PIyUaJAKigr3YvaBXrzS660lo9G2BGwrJvS9/V0J1b+r/JVf0sfQsNrd+WkxyAAAAAASUVORK5CYII="
+                alt="stars"
+                class="review-img"
+                width="116"
+                height="20"
+              />
+            </div>
+            <div class="review-text">
+              <p class="review-content">
+                Absolutely love the game! The graphics and storm effects are
+                incredible. The combat is fun, and the customization options are
+                vast. A must-try for any flying game fan!
+              </p>
+              <p class="review-author">John Doe</p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="review-container">
+            <div class="review-img-thumb">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAAUCAYAAABcbhl9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7ZjdTQJBEMf/s3wYEh8oQStQO9BHo8ZYgVCBdqCUYCWSGORROhA7uA7kgeTCJew4e4ggX3ece2eM8w8cy+7sj01mmMwOoPp/GnZwGD5iDzlJ+f74lGQQdrFnLL26cTXifbrCAB6lfL98gyRZHMuz7t6jChrwLeV75Sc61BDdfY0NXcKzlO+Xv9Gh4ZNEB89yNzOO4zlPUr5//kaHloy5TjOXVcr3z4+LIldFVWFumLhOEhFMkrN5krc37AxkcxCPmYII9mH3DP1Vpsovjl923yuMW4FdC8S9Ph8Jcj+MaTpgVCeD5ipT5RfHj1OuLeHeeRzZFYwjtNYtKr84fuzQ2ikCS3wif+H+tiS3R+5HR7Wr9QdSfnF8Mw+tRHwiFu20MBC33Z40l2nlF8Nf2SmKnunFlcibWFJDv+2c4xAZpPz8+MmdojUiQ+/IUcrPxl/pUImOxMhKY/OTvcrPZrPk0KgTG66//8xUH3a2P7Ty8+UvOXSMJaOBtdyy4OZiaV3m7dtcys+XX16cICvAqZuliqqO0JxWUWGXe8a6OxPF7SdDOMCWUn6+/PIyUaJAKigr3YvaBXrzS660lo9G2BGwrJvS9/V0J1b+r/JVf0sfQsNrd+WkxyAAAAAASUVORK5CYII="
+                alt="stars"
+                class="review-img"
+                width="116"
+                height="20"
+              />
+            </div>
+            <div class="review-text">
+              <p class="review-content">
+                Great game, but sometimes the controls feel a bit unresponsive.
+                Would love to see more control options.
+              </p>
+              <p class="review-author">Jane Smith</p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="review-container">
+            <div class="review-img-thumb">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAAUCAYAAAAA5FpZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG+SURBVHgB7ZddTsJAEMf/s3wYEh84Ap5AvAE8GjWGEwAn0BsoR/AkkhjkUW4g3qA3kAeShibsOFvAItAvLMaw/Qfa7e7sr5uZdHcGyPX/NB2g7j6jhgPJJj7FGbhD1JSmd9Mue3xGLUyQoWzjK8RJoyHXqvnPSugga1nGj3W4Inr4biu6RcayjR/pcPdFosfB3sSMht+XkWzkRzq8oFQ7Sd++spHvH5rmlC1D3TFxlSRiTLIn8WJfipjpyGTHbzM5HvTT6RXGu0xzfsAvmucS415gbYGY3/ISI/NirD4nRnnR6O4yzfkB399SdAGPJiLYX87cQy9sMOcHfN/hlUs4mrgpn8A4LcnMkfzzotIKX1DOD/hqHVryuCkW/aQwEPfNnCTFRM5fdu2y817pzaQ4USzJgT5OrlHHHrKZH19phogUfeKAOlb+TodL9GIjn8TmN3OPlb/lcG/gG4bnl4Gq00H6RdvO33L4HFtGE625p8HdzdSoyOnLZNv5xc0O0gJchUFO2fIM3dUp6w55pLTJSckvXxXhHCllO7+4TZQoyQmrpbqq3GC0PmRSI7l13IGAZVwVfo4nW3HOz/WH+gKXCO+R3TeGRQAAAABJRU5ErkJggg=="
+                alt="stars"
+                class="review-img"
+                width="92"
+                height="20"
+              />
+            </div>
+            <div class="review-text">
+              <p class="review-content">
+                Very addictive! The storm mechanics add an exciting twist to the
+                gameplay, but the in-app purchases can be a bit too tempting.
+              </p>
+              <p class="review-author">Michael Brown</p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="review-container">
+            <div class="review-img-thumb">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAUCAYAAAA0nZtFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG0SURBVHgB7ZbdTQJBFIXPHX4MiQ+UoBWIHcCjUWOoAKhAO1BKsBJJDPIoHYgdbAfyQLJhE+Z6ZxFB9h+XMBs9gWWYufPt5OzO3Av8K7tmQzTcJ5xgT7KJT0kB7ggnStObaVc9PqU2pshRtvEVkqTRlGvdfOcVdJG3LOMnGqKI7r/bim6Qs2zjxxriPou7vN57zGj6fTnJRn6sISWlOmn6dpWNfP9QNadwFeqWieskjjLJnuPlvouZ6chkx28zOR704/ElJmGhReKXzf8K405gHYGYz9clQebGWL2OjOqy0QsLLRLf3zK6hAfjGHaXs/DQjxosEt83pHYBRxO35BWaZCWZOZLfz2vt6AUVia82oRWPWxIxSAsD8cDMSVNMFYUfWql6L/RqUlQcS3LY+9EVGthBNvOTK9UIkaIP7FGH4ocaIu4mPpk0Mb+Zeyh+wBBv6AdG5++16rNh9kXbzg8YskAgaKo19zW4t53aypy9zLadX97uIC3AlU1yClfn6K1OYXfEY6VNzie//FWEM2SU7fxykCguygmspfqrXWO8OWRSm/x03aGAZVyVfo6nW3HB+X9Nn9IBc7rFA5RhAAAAAElFTkSuQmCC"
+                alt="stars"
+                class="review-img"
+                width="68"
+                height="20"
+              />
+            </div>
+            <div class="review-text">
+              <p class="review-content">
+                Fun game, but sometimes the controls can feel a bit clunky,
+                especially during intense dogfights. Still, the graphics and
+                concept are great!
+              </p>
+              <p class="review-author">David Clark</p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="review-container">
+            <div class="review-img-thumb">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAAUCAYAAABcbhl9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHUSURBVHgB7ZjdTQJBEMf/s3wYEh8oQStQO9BHo8ZYgVCBdqCUYCWSGORROhA7uA7kgeTCJew4e4ggX3ece2eM8w8cy+7sj01mmMwOoPp/GnZwGD5iDzlJ+f74lGQQdrFnLL26cTXifbrCAB6lfL98gyRZHMuz7t6jChrwLeV75Sc61BDdfY0NXcKzlO+Xv9Gh4ZNEB89yNzOO4zlPUr5//kaHloy5TjOXVcr3z4+LIldFVWFumLhOEhFMkrN5krc37AxkcxCPmYII9mH3DP1Vpsovjl923yuMW4FdC8S9Ph8Jcj+MaTpgVCeD5ipT5RfHj1OuLeHeeRzZFYwjtNYtKr84fuzQ2ikCS3wif+H+tiS3R+5HR7Wr9QdSfnF8Mw+tRHwiFu20MBC33Z40l2nlF8Nf2SmKnunFlcibWFJDv+2c4xAZpPz8+MmdojUiQ+/IUcrPxl/pUImOxMhKY/OTvcrPZrPk0KgTG66//8xUH3a2P7Ty8+UvOXSMJaOBtdyy4OZiaV3m7dtcys+XX16cICvAqZuliqqO0JxWUWGXe8a6OxPF7SdDOMCWUn6+/PIyUaJAKigr3YvaBXrzS660lo9G2BGwrJvS9/V0J1b+r/JVf0sfQsNrd+WkxyAAAAAASUVORK5CYII="
+                alt="stars"
+                class="review-img"
+                width="116"
+                height="20"
+              />
+            </div>
+            <div class="review-text">
+              <p class="review-content">
+                The storm mechanics really set this game apart. I love how each
+                mission feels different thanks to the weather. Highly recommend
+                for anyone who loves action-packed games with a unique twist!
+              </p>
+              <p class="review-author">Olivia Green</p>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="review-container">
+            <div class="review-img-thumb">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAUCAYAAAA0nZtFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG0SURBVHgB7ZbdTQJBFIXPHX4MiQ+UoBWIHcCjUWOoAKhAO1BKsBJJDPIoHYgdbAfyQLJhE+Z6ZxFB9h+XMBs9gWWYufPt5OzO3Av8K7tmQzTcJ5xgT7KJT0kB7ggnStObaVc9PqU2pshRtvEVkqTRlGvdfOcVdJG3LOMnGqKI7r/bim6Qs2zjxxriPou7vN57zGj6fTnJRn6sISWlOmn6dpWNfP9QNadwFeqWieskjjLJnuPlvouZ6chkx28zOR704/ElJmGhReKXzf8K405gHYGYz9clQebGWL2OjOqy0QsLLRLf3zK6hAfjGHaXs/DQjxosEt83pHYBRxO35BWaZCWZOZLfz2vt6AUVia82oRWPWxIxSAsD8cDMSVNMFYUfWql6L/RqUlQcS3LY+9EVGthBNvOTK9UIkaIP7FGH4ocaIu4mPpk0Mb+Zeyh+wBBv6AdG5++16rNh9kXbzg8YskAgaKo19zW4t53aypy9zLadX97uIC3AlU1yClfn6K1OYXfEY6VNzie//FWEM2SU7fxykCguygmspfqrXWO8OWRSm/x03aGAZVyVfo6nW3HB+X9Nn9IBc7rFA5RhAAAAAElFTkSuQmCC"
+                alt="stars"
+                class="review-img"
+                width="68"
+                height="20"
+              />
+            </div>
+            <div class="review-text">
+              <p class="review-content">
+                Nice concept, but I wish the matchmaking was better for
+                multiplayer mode. It's frustrating to be paired with much
+                stronger opponents.
+              </p>
+              <p class="review-author">Emma White</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="swiper-button-next reviews-swiper-button-next"></div>
+      <div class="swiper-button-prev reviews-swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="how" id="how">
+  <div class="container how-clouds">
+    <h2 class="how-title">How to Play</h2>
+    <div class="swiper howSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide how-mySwiper-slide">
+          <div class="slide-container">
+            <picture class="slide-image">
+              <source
+                srcset="/stp-7970_own/assets/card1-desk1x-abe51b00.png 1x, /stp-7970_own/assets/card1-desk2x-4f9a6bca.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="slide-image"
+                src="/stp-7970_own/assets/card1-mob1x-eec5f068.png"
+                srcset="/stp-7970_own/assets/card1-mob2x-d6d44147.png 2x"
+                alt="Slide"
+              />
+            </picture>
+            <div class="slide-text-container">
+              <h3 class="slide-title">Select Your Aircraft</h3>
+              <p class="slide-text">
+                Choose your plane, each with its unique stats and abilities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide how-mySwiper-slide">
+          <div class="slide-container">
+            <picture class="slide-image">
+              <source
+                srcset="/stp-7970_own/assets/card2-desk1x-7791022e.png 1x, /stp-7970_own/assets/card2-desk2x-2e03f8d9.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="slide-image"
+                src="/stp-7970_own/assets/card2-mob1x-697b97d1.png"
+                srcset="/stp-7970_own/assets/card2-mob2x-d7fd9f45.png 2x"
+                alt="Slide"
+              />
+            </picture>
+            <div class="slide-text-container">
+              <h3 class="slide-title">Upgrade Your Plane</h3>
+              <p class="slide-text">
+                Use resources earned in-game to upgrade your aircraft for better
+                performance in combat and survival.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide how-mySwiper-slide">
+          <div class="slide-container">
+            <picture class="slide-image">
+              <source
+                srcset="/stp-7970_own/assets/card3-desk1x-4c9ba0d8.png 1x, /stp-7970_own/assets/card3-desk2x-b6ca3e4f.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="slide-image"
+                src="/stp-7970_own/assets/card3-mob1x-3a92879a.png"
+                srcset="/stp-7970_own/assets/card3-mob2x-e0181636.png 2x"
+                alt="Slide"
+              />
+            </picture>
+            <div class="slide-text-container">
+              <h3 class="slide-title">Complete Missions</h3>
+              <p class="slide-text">
+                Tackle a variety of missions, from storm navigation to aerial
+                combat, to progress through levels.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide how-mySwiper-slide">
+          <div class="slide-container">
+            <picture class="slide-image">
+              <source
+                srcset="/stp-7970_own/assets/card4-desk1x-d0e8f73e.png 1x, /stp-7970_own/assets/card4-desk2x-f4ee4d92.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="slide-image"
+                src="/stp-7970_own/assets/card4-mob1x-9a45b210.png"
+                srcset="/stp-7970_own/assets/card4-mob2x-ee2f1f9f.png 2x"
+                alt="Slide"
+              />
+            </picture>
+            <div class="slide-text-container">
+              <h3 class="slide-title">Fight Other Pilots</h3>
+              <p class="slide-text">
+                Engage in intense dogfights against AI or other players in
+                real-time multiplayer mode.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide how-mySwiper-slide">
+          <div class="slide-container">
+            <picture class="slide-image">
+              <source
+                srcset="/stp-7970_own/assets/card5-desk1x-0b5908d9.png 1x, /stp-7970_own/assets/card5-desk2x-f9925fbf.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="slide-image"
+                src="/stp-7970_own/assets/card5-mob1x-9c5f7d40.png"
+                srcset="/stp-7970_own/assets/card5-mob2x-b79d66f4.png 2x"
+                alt="Slide"
+              />
+            </picture>
+            <div class="slide-text-container">
+              <h3 class="slide-title">Avoid Storms</h3>
+              <p class="slide-text">
+                Navigate through dynamic storms, which can damage your plane or
+                throw you off course.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide how-mySwiper-slide">
+          <div class="slide-container">
+            <picture>
+              <source
+                srcset="/stp-7970_own/assets/card6-desk1x-851cbd9e.png 1x, /stp-7970_own/assets/card6-desk2x-6651b14b.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="slide-image"
+                src="/stp-7970_own/assets/card6-mob1x-60ee8d51.png"
+                srcset="/stp-7970_own/assets/card6-mob2x-149945bd.png 2x"
+                alt="Slide"
+              />
+            </picture>
+            <div class="slide-text-container">
+              <h3 class="slide-title">Collect Resources</h3>
+              <p class="slide-text">
+                Gather items and currency during missions to improve your
+                aircraft or unlock new abilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="our" id="uniqueness">
+  <div class="container our-clouds">
+    <h2 class="our-title">Our Uniqueness</h2>
+    <div class="our-wrapper">
+      <p class="our-description">
+        Storm Wings stands out by blending fast-paced aerial combat with
+        strategic weather elements. The unpredictable storm system creates a
+        constantly changing battlefield, keeping players on their toes. The
+        depth of aircraft customization and competitive multiplayer mode
+        <span class="color-text">offers a unique and engaging experience</span>
+        not found in many mobile games.
+      </p>
+
+      <picture class="our-browse">
+        <source
+          srcset="/stp-7970_own/assets/browse-top1x-desk-dc48f640.png 1x, /stp-7970_own/assets/browse-top2x-desk-84359daf.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="/stp-7970_own/assets/browse-top1x-mob-f16b118c.png 1x, /stp-7970_own/assets/browse-top2x-mob-c106b741.png 2x"
+          media="(max-width: 1199px)"
+        />
+        <img src="/stp-7970_own/assets/browse-top1x-mob-f16b118c.png" alt="Browse top image" />
+      </picture>
+    </div>
+    <div class="our-text-lightning-wrapper">
+      <p class="our-text-lightning">
+        <span>Join the Storm Wings community!</span>
+      </p>
+    </div>
+    <div class="our-wrapper bottom">
+      <p class="our-description">
+        Thousands of players worldwide trust Storm Wings for its addictive
+        gameplay, strong community, and fair competition.
+        <span class="color-text"
+          >Join our Discord and follow our social media channels</span
+        >
+        to stay updated with the latest news, updates, and community events!
+        Here at Storm Wings, we prioritize player satisfaction and fair play,
+        and we strive to offer you the best experience possible.
+      </p>
+
+      <picture class="our-browse">
+        <source
+          srcset="/stp-7970_own/assets/browse1x-desk-fd60effb.png 1x, /stp-7970_own/assets/browse2x-desk-df1cdabc.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="/stp-7970_own/assets/browse1x-mob-876887e4.png 1x, /stp-7970_own/assets/browse2x-mob-2b803d9f.png 2x"
+          media="(max-width: 1199px)"
+        />
+        <img src="/stp-7970_own/assets/browse1x-mob-876887e4.png" alt="Browse image" />
+      </picture>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="footer-logo">
+        <img
+          srcset="/stp-7970_own/assets/favikon1x-94a801d9.png 1x, /stp-7970_own/assets/favikon2x-b0527e29.png 2x"
+          width="60"
+          height="60"
+          src="/stp-7970_own/assets/favikon1x-94a801d9.png"
+          alt="Favicon Storm Wings"
+          class="footer-logo-img"
+        />
+        <p class="footer-logo-text">Storm Wings</p>
+      </div>
+
+      <div class="footer-play">
+        <h3 class="footer-play-text">Rise Above the Storm!</h3>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.halfbrick.stormwings&hl=en&gl=us"
+          target="_blank"
+          class="footer-play-link"
+        >
+          <img
+            srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJESURBVHgBrZZPaBNBFIffzE5iFSOh0BYv2h48ChalIBRaSw5CDyL1oF6MoIeeGm+iQpODoIg2uQkK5uafg0b0IqVNCh6KBrsgiLeuHiRUrCuNsSSTee5EtqRp0n279Tskw+yb37dvhl2WgcOxx2eSwHFKjxlizkCVWjyXs+A/wI4+mUgzgKlNk4AWKsgUzz9Pww5hxx/e/lnb+y7a9qIWASaKZ1+8hICwsZtlrPQ+ABl527kIMBt02xoCPfCSNECWkusybV7M2UCEu4M9K5dBrA1vX81wOrSbLw09nbgARDY6cCF10gBNgeq017bx1glSJ//u7YhkxvLJZ+OP/uS7+skCP5IIq8G9fYtxQ9Xz67OhBFlAlVyPfIBD4pd+OPsNhjPVudCynDdOkQRekhuRJRgJlzbNaREqlnNEG9u25ZDb0XrwOnx811evZbYjO8GBQHMnxHBNlHGcIQlcybWVVWq4y6igVk5+ugXDpTJU690QPrxKW4RgkjrQ4SOlN43x79cHofqxm7AKbTAg4SloDnchSAqyVh8MjckF4Te8WaJp3i7n1W4xzuI62J0TQcK3Sn7YCDwZjslMaw0PGu5SfnUgKdbqA+FYLdPuuggejgXg8krfrGnCfOcq4TccESyOEO/JFxeAAKeHo42IyYqqDfbk35PCNYIUjpCtK5naXzAt8Im49Pmu7YRHOyQXmGJJP3fcinG/t9Ll/I+2BNsK2NW+ueLkHevbF9gBTP98jw1NK4VxxvQhYraiZGagYJK/HLbjL3HNJcY8dk27AAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA2CAYAAACBWxqaAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQqSURBVHgBzZpNbxtFGMefWa9DoRJEIgkNIORK8AGCCOoNJw1vB6SmBUFPdT5BY3HiAHUOKNfkwDnpAVKkIsqFS1t2ewAhGlRLnJEtDlBaVXXrxn3ZmX06M864tuuXfXkm8e9gxZv1zP/nfeYZrbwMdslvHBu/d8BdBobvqLfNo1h2GFv749MfzsKIwtTLka3PcoIFHgLkep+EVcZYaRRFtMDsuROVfuG7uOCiKP5+8kIVRgQ2u3W8gIxtxPoQ4GYGw5VREHEYnz4NMUFgBcEc7+3vT5yCfYbNrd7AnZdXIXzmH0iCWh+IztL2yfM+7AMOC5+Dg/9+Ac7D1yAJ8mrkZOfyZs8d3ziydSwHe4yjXtJKKFRZcZapvLX1cQn2EDb/9T1shXAakKacWoPuYdvtEFBQSeziy7a7ZLNbOd0HKMqpjbwqK5vrw+l1kFjCatt9qoQ6JqYtp+aExG3XGfRP6iuhoG67zrATbEgoqNruUAGFLYnm4Hhm8fwHFe5lE62PSAJ6HksS05kGrD//Ww4FbgaXXO++dyAX5/ORBRTUEir8Ny/8CtOyWeySdwWvPLqc3YgqEktAQSXRI/yTORALmVB4UcoqtoCeIKXEoPCtORB1WcmrUQkuuvl+5yUS0BMklIgSvmMeKSI3D69fWSUW0IPHlIgbvmMuWVZqfcirUWo/nkpADxxRIk34zgnhjCorczVSC+gxh0iQhTfzybJSixw9GCcR0IP2kaAO35pPSvDQPU0moAftkrAVvgVCnlRAYSRe5RN2wzehF1BM7dyF1Z8r8FKdg23IBSbvX4evrhXhxf9vQ/3bNyC8MwbWQCiTCpjwkw+u6/cqvE0JxnCNTKA7vMGWBMo7O3dBnCUR6BfeQC2hwotAzKm/UwsMC2+gkcCa3IlL2bqYefZDqKojqQSihjeklPB5IGayR/kKW4SaOZhYIG54Q2wJ2Wlkynx2gc+Zb72dRAJJwxuiSWBN3vgvZ9/lM9l5fqXfWbEF0oY3DJRgsObWxeGxhWB92DixBKjCG3pI+BhyVefF9jofRGQB6vAGLfHd61UmcFHV+dh7suZj4EY5yVZ4XecIa/VbzvrE+yLSN97NUAFr4RE2d0JePOyXEwU3DBSwEx59FrLSpHf1ChDQV4A+vNxFAZenLv9J+qtNTwHa8M06b4R8PW259OIpAeLwvhB8adovV8ESHQJU4VHdaCAsT3rbJHU+iJYATXishcBKh365OnQHpUILkISXdS7b4oqNOh+EezCo1z7/68vx5OHRB4cXpy6WY+2gVLBrH33ivdKo5iEmss6rss4LVP08Kc6hnb9j9mXVFrHUCIOZ/Q6v0A883Tw6q57Wyg89W2//QXGv63wQehG7IljkmeyP/SVot39KWPub/+bfLLgsc8o8fiZ/lC4zBpsTl7Z/ghHlMX/0nTss8PEZAAAAAElFTkSuQmCC 2x"
+            width="24"
+            height="27"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJESURBVHgBrZZPaBNBFIffzE5iFSOh0BYv2h48ChalIBRaSw5CDyL1oF6MoIeeGm+iQpODoIg2uQkK5uafg0b0IqVNCh6KBrsgiLeuHiRUrCuNsSSTee5EtqRp0n279Tskw+yb37dvhl2WgcOxx2eSwHFKjxlizkCVWjyXs+A/wI4+mUgzgKlNk4AWKsgUzz9Pww5hxx/e/lnb+y7a9qIWASaKZ1+8hICwsZtlrPQ+ABl527kIMBt02xoCPfCSNECWkusybV7M2UCEu4M9K5dBrA1vX81wOrSbLw09nbgARDY6cCF10gBNgeq017bx1glSJ//u7YhkxvLJZ+OP/uS7+skCP5IIq8G9fYtxQ9Xz67OhBFlAlVyPfIBD4pd+OPsNhjPVudCynDdOkQRekhuRJRgJlzbNaREqlnNEG9u25ZDb0XrwOnx811evZbYjO8GBQHMnxHBNlHGcIQlcybWVVWq4y6igVk5+ugXDpTJU690QPrxKW4RgkjrQ4SOlN43x79cHofqxm7AKbTAg4SloDnchSAqyVh8MjckF4Te8WaJp3i7n1W4xzuI62J0TQcK3Sn7YCDwZjslMaw0PGu5SfnUgKdbqA+FYLdPuuggejgXg8krfrGnCfOcq4TccESyOEO/JFxeAAKeHo42IyYqqDfbk35PCNYIUjpCtK5naXzAt8Im49Pmu7YRHOyQXmGJJP3fcinG/t9Ll/I+2BNsK2NW+ueLkHevbF9gBTP98jw1NK4VxxvQhYraiZGagYJK/HLbjL3HNJcY8dk27AAAAAElFTkSuQmCC"
+            alt="iPhone15Pro"
+            class="footer-play-img"
+          />
+          Play Now
+        </a>
+      </div>
+
+      <img
+        srcset="/stp-7970_own/assets/cloud-storm1x-f3de7726.png 1x, /stp-7970_own/assets/cloud-storm2x-225ac852.png 2x"
+        width="413"
+        height="288"
+        src="/stp-7970_own/assets/cloud-storm1x-f3de7726.png"
+        alt="Cloud Storm Wings"
+        class="footer-cloud"
+      />
+
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <a href="./cookies-policy.html" class="nav-link">COOKIE POLICY</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="./terms-conditions.html" class="nav-link"
+            >TERMS AND CONDITIONS</a
+          >
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="./privacy-policy.html" class="nav-link">PRIVACY POLICY</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-rights">
+    <div class="container footer-rights-container">
+      <p class="footer-rights-text">
+        All rights reserved, 2025.
+        <a
+          href="https://playqueststorm.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >playqueststorm.com</a
+        >
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
