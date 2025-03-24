@@ -11,6 +11,7 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
+    base: '/stp-7970_own/', 
     build: {
       sourcemap: true,
 
