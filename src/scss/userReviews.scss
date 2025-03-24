@@ -1,0 +1,122 @@
+.reviews {
+  scroll-margin-top: 60px;
+}
+
+.reviews-clouds {
+  padding-bottom: 85px;
+}
+.user-title.how-title {
+  margin-bottom: 60px;
+}
+.review-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 288px;
+  height: 247px;
+  padding: 12px 8px;
+  background-color: $_w_300;
+  border: 8px solid #f7d0c2;
+  border-radius: 16px;
+  box-shadow: 2px 4px 6px 0px #00000040;
+}
+.review-img-thumb {
+  padding-left: 8px;
+  margin-bottom: 16px;
+}
+
+.review-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $_brown;
+}
+.review-content {
+  text-transform: uppercase;
+}
+.review-author {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.reviews-clouds .reviewsSwiper {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.reviews-clouds .reviewsSwiper .reviews-swiper-button-next,
+.reviews-clouds .reviewsSwiper .reviews-swiper-button-prev {
+  position: absolute;
+  top: 327px;
+  background-color: $_purple_200;
+  width: 60px;
+  height: 60px;
+  border-radius: 24px;
+}
+
+.reviewsSwiper .reviews-swiper-button-prev {
+  left: 74px;
+}
+
+.reviewsSwiper .reviews-swiper-button-next {
+  right: 74px;
+}
+
+.reviewsSwiper .reviews-swiper-button-prev::after,
+.reviewsSwiper .reviews-swiper-button-next::after {
+  font-size: 24px;
+  color: $_white;
+}
+
+.reviews-clouds::after {
+  content: '';
+  position: absolute;
+  top: 354px;
+  left: 209px;
+  width: 177px;
+  height: 111px;
+  background-image: url('/img/cloud1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-30deg);
+  z-index: -1;
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews {
+    scroll-margin-top: 102px;
+  }
+  .reviews-clouds {
+    padding-bottom: 70px;
+  }
+  .user-title.how-title {
+    margin-bottom: 80px;
+    text-align: left;
+  }
+  .swiper.reviewsSwiper {
+    max-width: 1080px;
+  }
+  .review-container {
+    max-width: 349px;
+  }
+
+  .review-text {
+    font-size: 16px;
+  }
+
+  .reviewsSwiper .swiper-slide {
+    width: 349px;
+  }
+
+  .reviewsSwiper .reviews-swiper-button-next,
+  .reviewsSwiper .reviews-swiper-button-prev {
+    display: none;
+  }
+  .reviews-clouds::after {
+    display: none;
+  }
+}

@@ -1,0 +1,64 @@
+.backdrop {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  background-color: rgba(141, 184, 228, 0.5);
+}
+.backdrop.is-hidden {
+  position: static;
+  justify-content: flex-start;
+  opacity: 1;
+  background: none;
+  pointer-events: auto;
+}
+.modal {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 288px;
+
+  display: flex;
+  justify-content: space-between;
+  z-index: 102;
+}
+
+.back-button {
+  padding: 13px 14px;
+  background-color: $_w_500;
+  border: 1px solid $_brown;
+  border-radius: 16px;
+  align-self: flex-start;
+}
+
+.back-button.is-hidden {
+  display: none;
+}
+
+.modal-nav.is-hidden {
+  display: none;
+}
+.modal-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 33px;
+  padding: 28.5px 24px;
+  background-color: $_w_500;
+  border: 1px solid $_brown;
+  border-radius: 16px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    display: none;
+  }
+}

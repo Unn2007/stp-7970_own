@@ -1,0 +1,90 @@
+@import './modal.scss';
+@import './header.scss';
+@import './advantages.scss';
+@import './footer.scss';
+@import './gameDescription.scss';
+@import './howToPlay.scss';
+@import './ourUniqueness.scss';
+@import './riseAbove.scss';
+@import './userReviews.scss';
+
+:root {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: $_brown;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: $_backg;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -68px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(82, 135, 200, 1);
+  filter: blur(120px);
+  z-index: -10;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 2131px;
+  right: -137px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(82, 135, 200, 1);
+  filter: blur(120px);
+  z-index: -10;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding-top: 102px;
+  }
+  .container {
+    max-width: 1200px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  body::before {
+    top: -323px;
+    left: -447px;
+    width: 814px;
+    height: 814px;
+    filter: blur(300px);
+  }
+
+  body::after {
+    top: 1592px;
+    right: -300px;
+    width: 814px;
+    height: 814px;
+    filter: blur(300px);
+  }
+}
